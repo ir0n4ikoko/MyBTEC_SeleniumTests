@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<License>
+  <Data>
+    <LicensedTo>Pearson Education</LicensedTo>
+    <LicenseType>Developer OEM</LicenseType>
+    <LicenseNote>Limited to 1 developer.</LicenseNote>
+    <OrderID>121212032804</OrderID>
+    <OEM>This is a redistributable license</OEM>
+    <Products>
+      <Product>Aspose.Total</Product>
+    </Products>
+    <EditionType>Enterprise</EditionType>
+    <SerialNumber>bcc8b5c2-941e-4898-a1a1-560afed423bb</SerialNumber>
+    <SubscriptionExpiry>20140110</SubscriptionExpiry>
+    <LicenseVersion>2.2</LicenseVersion>
+  </Data>
+  <Signature>E7th3uWnRuOiJ+IS9KFvHnhWcf6v3rDymafG74Rx8kLfD5EDzhhfvTjWyv0majmuPxcre7Q5R7vY+CqFbssjkgDORJvYZ2/FDHSkSFyNX09GdrWI+Vt7XchTI261etUvGt3BSK1KRU9X3ZwrZuE8U/u+FmBq6RGopl2YHzZuYX0=</Signature>
+</License>

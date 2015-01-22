@@ -1,0 +1,302 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8FA5487A-2FA4-4E38-B172-10D314C4D389}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Edi.Advance.BTEC.UiTests</RootNamespace>
+    <AssemblyName>Edi.Advance.BTEC.UiTests</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'PreProd|AnyCPU'">
+    <OutputPath>bin\PreProd\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Staging|AnyCPU'">
+    <OutputPath>bin\Staging\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Ci02|AnyCPU'">
+    <OutputPath>bin\Ci02\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ActiveUp.Net.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=6cceae6a4844c51b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\libs\Selenium\ActiveUp.Net.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ActiveUp.Net.Imap4, Version=5.0.3454.364, Culture=neutral, PublicKeyToken=9d424b1770e92b68, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\libs\Selenium\ActiveUp.Net.Imap4.dll</HintPath>
+    </Reference>
+    <Reference Include="Aspose.Pdf, Version=7.7.0.0, Culture=neutral, PublicKeyToken=47b2d0fcacdd3eb6, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\libs\Aspose\Aspose.Pdf.dll</HintPath>
+    </Reference>
+    <Reference Include="Aspose.Words, Version=11.10.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\libs\Aspose\Aspose.Words.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\..\..\..\libs\Selenium\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework">
+      <HintPath>..\..\..\packages\NUnit.2.6.3\lib\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WebDriver, Version=2.44.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\packages\Selenium.WebDriver.2.44.0\lib\net40\WebDriver.dll</HintPath>
+    </Reference>
+    <Reference Include="WebDriver.Support, Version=2.44.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\packages\Selenium.Support.2.44.0\lib\net40\WebDriver.Support.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\..\CommonAssemblyInfo.cs">
+      <Link>Properties\CommonAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="Flows\ViewQualificationStep1Flow.cs" />
+    <Compile Include="Flows\ViewQualificationStep2Flow.cs" />
+    <Compile Include="PageObjects\ViewQualificationStep1Page.cs" />
+    <Compile Include="PageObjects\ViewQualificationStep2Page.cs" />
+    <Compile Include="Tests\AssignmentActionsTest.cs" />
+    <Compile Include="Tests\AssignmentExternalUnitsTest.cs" />
+    <Compile Include="Tests\AssignmentPageTest.cs" />
+    <Compile Include="Tests\AssignmentQualificationNameTest.cs" />
+    <Compile Include="Tests\BroadcastTest.cs" />
+    <Compile Include="Tests\CheckAllStep2Test.cs" />
+    <Compile Include="Tests\ClaimRolesTest.cs" />
+    <Compile Include="Tests\CloneAnAssignmentActionTest.cs" />
+    <Compile Include="Tests\CheckAllStep3Test.cs" />
+    <Compile Include="Tests\CookieMessageTest.cs" />
+    <Compile Include="Tests\CourseActionsTest.cs" />
+    <Compile Include="Tests\CourseSummaryTest.cs" />
+    <Compile Include="Tests\CoversheetsTest.cs" />
+    <Compile Include="Tests\CreateCourseTest.cs" />
+    <Compile Include="Tests\ErrorFeedbackTest.cs" />
+    <Compile Include="Tests\ExternalLinksTest.cs" />
+    <Compile Include="Tests\FeedbackTest.cs" />
+    <Compile Include="Flows\ACSViewFlow.cs" />
+    <Compile Include="Flows\AssignmentsFlow.cs" />
+    <Compile Include="Flows\AssignmentStep1Flow.cs" />
+    <Compile Include="Flows\AssignmentStep2Flow.cs" />
+    <Compile Include="Flows\AssignmentStep3Flow.cs" />
+    <Compile Include="Flows\AssignmentStep4Flow.cs" />
+    <Compile Include="Flows\BroadcastFlow.cs" />
+    <Compile Include="Flows\BtecMasterFlow.cs" />
+    <Compile Include="Flows\ClaimRolesFlow.cs" />
+    <Compile Include="Flows\CourseViewAssignmentsFlow.cs" />
+    <Compile Include="Flows\CourseViewCoversheetsFlow.cs" />
+    <Compile Include="Flows\CourseViewTeamFlow.cs" />
+    <Compile Include="Flows\CloneAssignmentFlow.cs" />
+    <Compile Include="Flows\CreateAssignmentContext.cs" />
+    <Compile Include="Flows\CreateCourseContext.cs" />
+    <Compile Include="Flows\CreateCoversheetFlow.cs" />
+    <Compile Include="Flows\EditAssignmentStep1Flow.cs" />
+    <Compile Include="Flows\CourseFlow.cs" />
+    <Compile Include="Flows\CourseStep1Flow.cs" />
+    <Compile Include="Flows\CourseViewFlow.cs" />
+    <Compile Include="Flows\CourseStep2Flow.cs" />
+    <Compile Include="Flows\CourseStep3Flow.cs" />
+    <Compile Include="Flows\ErrorFeedbackFlow.cs" />
+    <Compile Include="Flows\ExternalLinksFlow.cs" />
+    <Compile Include="Flows\FeedbackFlow.cs" />
+    <Compile Include="Flows\FlowResult.cs" />
+    <Compile Include="Flows\HelpFlow.cs" />
+    <Compile Include="Flows\ReportsFlow.cs" />
+    <Compile Include="Flows\ResourcesFlow.cs" />
+    <Compile Include="Flows\ReviewFlow.cs" />
+    <Compile Include="Flows\SelectQualificationFlow.cs" />
+    <Compile Include="Flows\SendToIvFlow.cs" />
+    <Compile Include="Flows\StartFlow.cs" />
+    <Compile Include="Flows\HomeFlow.cs" />
+    <Compile Include="Flows\LoginFlow.cs" />
+    <Compile Include="Flows\TermsFlow.cs" />
+    <Compile Include="Flows\UserRoleApprovalFlow.cs" />
+    <Compile Include="Tests\FooterTest.cs" />
+    <Compile Include="Framework\AsposeFileReader\PdfReader.cs" />
+    <Compile Include="Framework\CSV\AssignmentReport.cs" />
+    <Compile Include="Framework\Configuration.cs" />
+    <Compile Include="Framework\CSV\CourseReport.cs" />
+    <Compile Include="Framework\FlowBase.cs" />
+    <Compile Include="Framework\INavigator.cs" />
+    <Compile Include="Framework\CSV\LoginReport.cs" />
+    <Compile Include="Framework\MailHelper.cs" />
+    <Compile Include="Framework\Navigator.cs" />
+    <Compile Include="Framework\CSV\OptOutReport.cs" />
+    <Compile Include="Framework\PageBase.cs" />
+    <Compile Include="Framework\CSV\Report.cs" />
+    <Compile Include="Framework\CSV\RoleClaimReport.cs" />
+    <Compile Include="Framework\SeleniumContext.cs" />
+    <Compile Include="Tests\HomePageTest.cs" />
+    <Compile Include="Tests\LiveDeployTest.cs" />
+    <Compile Include="Tests\LoginPageTest.cs" />
+    <Compile Include="PageObjects\ACSViewPage.cs" />
+    <Compile Include="PageObjects\AssignmentsPage.cs" />
+    <Compile Include="PageObjects\AssignmentStep1Page.cs" />
+    <Compile Include="PageObjects\AssignmentStep2Page.cs" />
+    <Compile Include="PageObjects\AssignmentStep3Page.cs" />
+    <Compile Include="PageObjects\AssignmentStep4Page.cs" />
+    <Compile Include="PageObjects\AssignmentWizard.cs" />
+    <Compile Include="PageObjects\BroadcastPage.cs" />
+    <Compile Include="PageObjects\BtecMasterPage.cs" />
+    <Compile Include="PageObjects\ClaimRolesPageAtFirstLogin.cs" />
+    <Compile Include="PageObjects\CloneAssignmentPage.cs" />
+    <Compile Include="PageObjects\Controls\Calendar.cs" />
+    <Compile Include="PageObjects\Controls\CheckableControl.cs" />
+    <Compile Include="PageObjects\Controls\Checkbox.cs" />
+    <Compile Include="PageObjects\Controls\CheckboxList.cs" />
+    <Compile Include="PageObjects\Controls\CKeditor.cs" />
+    <Compile Include="PageObjects\Controls\ClickableControl.cs" />
+    <Compile Include="PageObjects\Controls\ControlBase.cs" />
+    <Compile Include="PageObjects\Controls\ControlListBase.cs" />
+    <Compile Include="PageObjects\Controls\GridCheckbox.cs" />
+    <Compile Include="PageObjects\Controls\Dropdown.cs" />
+    <Compile Include="PageObjects\Controls\GridControl.cs" />
+    <Compile Include="PageObjects\Controls\HiddenControl.cs" />
+    <Compile Include="PageObjects\Controls\Label.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PageObjects\Controls\Link.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PageObjects\Controls\MenuItem.cs" />
+    <Compile Include="PageObjects\Controls\PopupButton.cs" />
+    <Compile Include="PageObjects\Controls\Radiobutton.cs" />
+    <Compile Include="PageObjects\Controls\RadiobuttonList.cs" />
+    <Compile Include="PageObjects\Controls\TextField.cs" />
+    <Compile Include="PageObjects\ClaimRolesPage.cs" />
+    <Compile Include="PageObjects\Controls\ValidableControl.cs" />
+    <Compile Include="PageObjects\Controls\WebDriverControl.cs" />
+    <Compile Include="PageObjects\CourseViewAssignmentsTab.cs" />
+    <Compile Include="PageObjects\CourseViewCoversheetsTab.cs" />
+    <Compile Include="PageObjects\CourseViewTeamTab.cs" />
+    <Compile Include="PageObjects\CreateCoversheetPopup.cs" />
+    <Compile Include="PageObjects\EditAssignmentStep1Page.cs" />
+    <Compile Include="PageObjects\CoursePage.cs" />
+    <Compile Include="PageObjects\CourseStep1Page.cs" />
+    <Compile Include="PageObjects\CourseViewPage.cs" />
+    <Compile Include="PageObjects\CourseStep2Page.cs" />
+    <Compile Include="PageObjects\CourseStep3Page.cs" />
+    <Compile Include="PageObjects\ErrorFeedbackPage.cs" />
+    <Compile Include="PageObjects\ExternalLinksPage.cs" />
+    <Compile Include="PageObjects\FeedbackPage.cs" />
+    <Compile Include="PageObjects\HelpPage.cs" />
+    <Compile Include="PageObjects\HomePage.cs" />
+    <Compile Include="PageObjects\LoginPage.cs" />
+    <Compile Include="PageObjects\QualificationFilterPage.cs" />
+    <Compile Include="PageObjects\ReportsPage.cs" />
+    <Compile Include="PageObjects\ResourcesPage.cs" />
+    <Compile Include="PageObjects\ReviewPage.cs" />
+    <Compile Include="PageObjects\SendToIvPage.cs" />
+    <Compile Include="PageObjects\TermsPage.cs" />
+    <Compile Include="PageObjects\UserRoleApprovalPage.cs" />
+    <Compile Include="PageObjects\WithIdPage.cs" />
+    <Compile Include="Tests\PearsonAssignmentsTest.cs" />
+    <Compile Include="Tests\PendingStateUsersTest.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tests\ReportsTest.cs" />
+    <Compile Include="Tests\ResourcesTest.cs" />
+    <Compile Include="Tests\ReviewAssignmentTest.cs" />
+    <Compile Include="TestBase.cs" />
+    <Compile Include="Tests\TestAllSpecs.cs" />
+    <Compile Include="Tests\ViewQualificationTest.cs" />
+    <Compile Include="UI.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UI.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UiConst.cs" />
+    <Compile Include="Tests\UserPermissionsTest.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Framework\AsposeFileReader\Aspose.Total.lic" />
+    <None Include="Framework\FrameworkDiagram.cd" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Core\Edi.Advance.Core.Common\Edi.Advance.Core.Common.csproj">
+      <Project>{15b5c10a-9871-42d0-bb3f-549a2cfa7c71}</Project>
+      <Name>Edi.Advance.Core.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="UI.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>UI.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\..\..\packages\WebDriverChromeDriver.2.10\tools\chromedriver.exe">
+      <Link>chromedriver.exe</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="chromedriver-license.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

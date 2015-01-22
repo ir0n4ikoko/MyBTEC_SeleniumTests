@@ -1,0 +1,873 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ACSViewPage" xml:space="preserve">
+    <value>ACSView</value>
+  </data>
+  <data name="AddToCourse" xml:space="preserve">
+    <value>Add to Course</value>
+  </data>
+  <data name="AppliedScience" xml:space="preserve">
+    <value>Applied Science</value>
+  </data>
+  <data name="Approved" xml:space="preserve">
+    <value>Approved</value>
+  </data>
+  <data name="Archive" xml:space="preserve">
+    <value>Archive</value>
+  </data>
+  <data name="Archived" xml:space="preserve">
+    <value>Archived</value>
+  </data>
+  <data name="Assessor" xml:space="preserve">
+    <value>Assessor</value>
+  </data>
+  <data name="AssignmentRemovedMsg" xml:space="preserve">
+    <value>Assignment removed successfully.</value>
+  </data>
+  <data name="AssignmentRestoredMsg" xml:space="preserve">
+    <value>Assignment restored successfully.</value>
+  </data>
+  <data name="Assignments" xml:space="preserve">
+    <value>Assignments</value>
+  </data>
+  <data name="AssignmentsLinked" xml:space="preserve">
+    <value>Assignments linked</value>
+  </data>
+  <data name="AssignmentsPage" xml:space="preserve">
+    <value>Assignment</value>
+  </data>
+  <data name="AssignmentsReport" xml:space="preserve">
+    <value>Assignment data report</value>
+  </data>
+  <data name="AssignmentStep1Page" xml:space="preserve">
+    <value>DefineAssignment</value>
+  </data>
+  <data name="AssignmentStep2Page" xml:space="preserve">
+    <value>DefineGradingCriteria</value>
+  </data>
+  <data name="AssignmentStep3Page" xml:space="preserve">
+    <value>CreateAssignment</value>
+  </data>
+  <data name="AssignmentStep4Page" xml:space="preserve">
+    <value>SaveShareAssignment</value>
+  </data>
+  <data name="Author" xml:space="preserve">
+    <value>Author</value>
+  </data>
+  <data name="Authorised" xml:space="preserve">
+    <value>Authorised</value>
+  </data>
+  <data name="AwaitingApproval" xml:space="preserve">
+    <value>Awaiting approval</value>
+  </data>
+  <data name="Broadcast" xml:space="preserve">
+    <value>Content</value>
+  </data>
+  <data name="BroadcastPage" xml:space="preserve">
+    <value>NewsItem</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="CentreCoursesPage" xml:space="preserve">
+    <value>CourseSearch</value>
+  </data>
+  <data name="CentreID" xml:space="preserve">
+    <value>Centre ID</value>
+  </data>
+  <data name="ChangeIV" xml:space="preserve">
+    <value>Change IV</value>
+  </data>
+  <data name="Char50" xml:space="preserve">
+    <value>12345678901234567890123456789012345678901234567890</value>
+  </data>
+  <data name="ClaimRolesPage" xml:space="preserve">
+    <value>ClaimRolesView</value>
+  </data>
+  <data name="ClaimRolesPageRedirect" xml:space="preserve">
+    <value>ClaimRoles</value>
+  </data>
+  <data name="Clone" xml:space="preserve">
+    <value>Clone</value>
+  </data>
+  <data name="CloneAssignmentPage" xml:space="preserve">
+    <value>CloneAssignment</value>
+  </data>
+  <data name="ConfirmCourse" xml:space="preserve">
+    <value>Confirm Course</value>
+  </data>
+  <data name="Confirmed" xml:space="preserve">
+    <value>Confirmed</value>
+  </data>
+  <data name="Continue" xml:space="preserve">
+    <value>Continue</value>
+  </data>
+  <data name="CookieLearnMoreUrl" xml:space="preserve">
+    <value>http://uk.pearson.com/content/ped/pei/uk/pearson-uk/en/pearson-privacy/your-data-at-pearson/cookies/cookie-policy.html</value>
+  </data>
+  <data name="CookiePolicy" xml:space="preserve">
+    <value>Cookie Policy</value>
+  </data>
+  <data name="CookieText" xml:space="preserve">
+    <value>This Pearson website stores cookies on your computer which help us make the website work better for you.</value>
+  </data>
+  <data name="CookieTitle" xml:space="preserve">
+    <value>Privacy and Cookies</value>
+  </data>
+  <data name="CourseEndDate" xml:space="preserve">
+    <value>Course End Date</value>
+  </data>
+  <data name="CourseLeader" xml:space="preserve">
+    <value>Course Leader</value>
+  </data>
+  <data name="Courses" xml:space="preserve">
+    <value>Courses</value>
+  </data>
+  <data name="CoursesPage" xml:space="preserve">
+    <value>Course</value>
+  </data>
+  <data name="CoursesReport" xml:space="preserve">
+    <value>Course data report</value>
+  </data>
+  <data name="CourseStartDate" xml:space="preserve">
+    <value>Course Start Date</value>
+  </data>
+  <data name="CourseStep1Page" xml:space="preserve">
+    <value>SelectQualification</value>
+  </data>
+  <data name="CourseStep2Page" xml:space="preserve">
+    <value>SelectCourseUnits</value>
+  </data>
+  <data name="CourseStep3Page" xml:space="preserve">
+    <value>FinaliseCourse</value>
+  </data>
+  <data name="CourseTeamAdded" xml:space="preserve">
+    <value>Course team added</value>
+  </data>
+  <data name="CourseViewPage" xml:space="preserve">
+    <value>Open</value>
+  </data>
+  <data name="CreateCoversheet" xml:space="preserve">
+    <value>Create coversheet</value>
+  </data>
+  <data name="CreationDate" xml:space="preserve">
+    <value>Creation date</value>
+  </data>
+  <data name="CurrentStatus" xml:space="preserve">
+    <value>Current Status</value>
+  </data>
+  <data name="DateRoleClaimed" xml:space="preserve">
+    <value>Date role claimed</value>
+  </data>
+  <data name="DatetimeOptedOut" xml:space="preserve">
+    <value>Date/time opted out</value>
+  </data>
+  <data name="DDMReview" xml:space="preserve">
+    <value>DDM review</value>
+  </data>
+  <data name="Declined" xml:space="preserve">
+    <value>Declined</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="Deleted" xml:space="preserve">
+    <value>Deleted</value>
+  </data>
+  <data name="Download" xml:space="preserve">
+    <value>Download</value>
+  </data>
+  <data name="DownloadPDF" xml:space="preserve">
+    <value>Download PDF</value>
+  </data>
+  <data name="Draft" xml:space="preserve">
+    <value>Draft</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="EditAssignmentStep1Page" xml:space="preserve">
+    <value>EditAssignment</value>
+  </data>
+  <data name="Editing" xml:space="preserve">
+    <value>Editing</value>
+  </data>
+  <data name="EmailBodyAssignmentApproved" xml:space="preserve">
+    <value>\r\n        Dear {0} {1}\r\n        \r\n        The following assignment has been reviewed by the Internal Verifier.\r\n        \r\n        Assignment Brief title: {2}\r\n        Creator: {0} {1}\r\n        Subject: {3}\r\n        Courses: {4}\r\n         \r\n        Please  log in to myBTEC, find this assignment brief and then choose View IV feedback in the Action dropdown. \r\n        \r\n        Thank you.\r\n        \r\n        {5}\r\n    \r\n\r\n</value>
+  </data>
+  <data name="EmailBodyAssignmentRejected" xml:space="preserve">
+    <value>Dear {0} {1}\r\n        \r\n        Unfortunately your assignment [{2}] has been rejected by {3} {4}.\r\n        \r\n         \r\n        Please  log in to myBTEC and check the assignment review form for details.\r\n        \r\n        {5}\r\n    \r\n\r\n</value>
+  </data>
+  <data name="EmailBodyErrorFeedback" xml:space="preserve">
+    <value>\r\n\r\nException Code\r\n\r\n{0}\r\n\r\n\r\n\r\nUser\r\n\r\n{1}\r\n\r\n\r\n\r\nCentre\r\n\r\n{2}\r\n\r\n\r\n\r\nException Message\r\n\r\n{3}\r\n\r\n\r\n\r\nStack Trace\r\n\r\n{4}\r\n\r\n\r\n\r\n</value>
+  </data>
+  <data name="EmailBodyErrorFeedbackWithDscr" xml:space="preserve">
+    <value>\r\n\r\nException Code\r\n\r\n{0}\r\n\r\n\r\n\r\nUser\r\n\r\n{1}\r\n\r\n\r\n\r\nCentre\r\n\r\n{2}\r\n\r\n\r\n\r\nDescription\r\n\r\n{3}\n\n\r\n\r\n\r\n\r\n\r\nException Message\r\n\r\n{4}\r\n\r\n\r\n\r\nStack Trace\r\n\r\n{5}\r\n\r\n\r\n\r\n</value>
+  </data>
+  <data name="EmailBodyRoleApproved" xml:space="preserve">
+    <value>\r\n      The user {0} {1} has approved your role claim as {2} for {3}\r\n      \r\n      You may now log into myBTEC and carry out actions appropriate to that role.\r\n      \r\n      {4}\r\n    \r\n\r\n</value>
+  </data>
+  <data name="EmailBodyRoleClaimed" xml:space="preserve">
+    <value>\r\n\r\n \r\nThe user {0} {1} ({2}) has claimed the following role(s) within myBTEC;\r\n\r\n\n\n\r\n\r\n\r\n\r\n{3}\r\n\r\n\n\n\r\n\r\n\r\n\r\nPlease visit the ‘User role approval’ page to approve or decline these claims.\r\n\r\n\r\n{4}\r\n\r\n\r\n</value>
+  </data>
+  <data name="EmailBodyRoleDeclined" xml:space="preserve">
+    <value>\r\n      The user {0} {1} has declined your role claim as {2} for {3}\r\n      \r\n      If you feel this is incorrect you should contact them directly. Otherwise please log into myBTEC and claim a different role.\r\n      \r\n      {4}\r\n    \r\n\r\n</value>
+  </data>
+  <data name="EmailRoleClaimed" xml:space="preserve">
+    <value>Subject: {0} \r\nRole claimed: {1} </value>
+  </data>
+  <data name="EmailRoleClaimedNewRow" xml:space="preserve">
+    <value>\r\n\r\n\n\n\r\n</value>
+  </data>
+  <data name="DoNotReplyMessage" xml:space="preserve">
+    <value>NOTE: Please do not reply to this email as it cannot be delivered. If you wish to contact us then please use the existing Edexcel contact processes available at http://www.edexcel.com/contactus.</value>
+  </data>
+  <data name="EmailSubjectAssignmentApproved" xml:space="preserve">
+    <value>myBTEC - Assignment Brief Review</value>
+  </data>
+  <data name="EmailSubjectAssignmentRejected" xml:space="preserve">
+    <value>myBTEC - Your assignment [{0}] has been rejected</value>
+  </data>
+  <data name="EmailSubjectErrorFeedback" xml:space="preserve">
+    <value>myBTEC feedback - Feedback on Exception</value>
+  </data>
+  <data name="EmailSubjectRoleApproved" xml:space="preserve">
+    <value>myBTEC - You have been approved as {0} for {1}</value>
+  </data>
+  <data name="EmailSubjectRoleClaimed" xml:space="preserve">
+    <value>myBTEC - New myBTEC roles need approving</value>
+  </data>
+  <data name="EmailSubjectRoleDeclined" xml:space="preserve">
+    <value>myBTEC - Your claim as {0} for {1} has been declined</value>
+  </data>
+  <data name="ErrorFeedbackPage" xml:space="preserve">
+    <value>ErrorFeedback</value>
+  </data>
+  <data name="ErrorFeedbackText" xml:space="preserve">
+    <value>Please add any details of what you were trying to do and click 'send' so we can investigate further.</value>
+  </data>
+  <data name="ErrorFeedbackThankYou" xml:space="preserve">
+    <value>Thank you</value>
+  </data>
+  <data name="ErrorFeedbackTitle" xml:space="preserve">
+    <value>Something has gone wrong....</value>
+  </data>
+  <data name="EULA" xml:space="preserve">
+    <value>End User License Agreement</value>
+  </data>
+  <data name="EULAIAgree" xml:space="preserve">
+    <value>I Agree</value>
+  </data>
+  <data name="ExternalLinks" xml:space="preserve">
+    <value>External links</value>
+  </data>
+  <data name="ExternalLinksPage" xml:space="preserve">
+    <value>Links</value>
+  </data>
+  <data name="ExternalTest" xml:space="preserve">
+    <value>External test</value>
+  </data>
+  <data name="Feedback" xml:space="preserve">
+    <value>Feedback</value>
+  </data>
+  <data name="FeedbackPage" xml:space="preserve">
+    <value>Feedback</value>
+  </data>
+  <data name="FeedbackText" xml:space="preserve">
+    <value>The myBTEC team want to keep improving our website and our services to you. We need you to tell us what you think! Please contact us at http://www.edexcel.com/contactus</value>
+  </data>
+  <data name="FeedbackUrl" xml:space="preserve">
+    <value>http://www.edexcel.com/Aboutus/contact-us/Pages/home.aspx</value>
+  </data>
+  <data name="FirstName" xml:space="preserve">
+    <value>First name</value>
+  </data>
+  <data name="FooterCookiePolicyUrl" xml:space="preserve">
+    <value>http://uk.pearson.com/pearson-privacy/your-data-at-pearson/cookies/cookie-policy</value>
+  </data>
+  <data name="FooterLearnMoreUrl" xml:space="preserve">
+    <value>http://qualifications.pearson.com/en/support/Services/myBTEC.html</value>
+  </data>
+  <data name="FooterPrivacyPolicyUrl" xml:space="preserve">
+    <value>http://uk.pearson.com/pearson-privacy/policy/privacy-policy</value>
+  </data>
+  <data name="FooterText" xml:space="preserve">
+    <value>Helpful pages\r\nhome\r\nclaim roles\r\nuser role approval\r\nhelp\r\nfeedback\r\nlearn more\r\nCourses\r\nmy courses\r\ncentre courses\r\ncreate a course\r\nview qualification\r\nAssignments\r\nmy assignments\r\ncentre assignments\r\ncreate an assignment\r\nLegal\r\ncookie policy\r\nprivacy policy\r\nterms of use\r\nlog out</value>
+  </data>
+  <data name="GoToACS" xml:space="preserve">
+    <value>Go to Assignment Checking Service</value>
+  </data>
+  <data name="Help" xml:space="preserve">
+    <value>Help</value>
+  </data>
+  <data name="HelpPage" xml:space="preserve">
+    <value>Help</value>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="InternalVerifier" xml:space="preserve">
+    <value>Internal Verifier</value>
+  </data>
+  <data name="IV" xml:space="preserve">
+    <value>IV</value>
+  </data>
+  <data name="LastName" xml:space="preserve">
+    <value>Last name</value>
+  </data>
+  <data name="LeadInternalVerifier" xml:space="preserve">
+    <value>Lead Internal Verifier</value>
+  </data>
+  <data name="LearnMore" xml:space="preserve">
+    <value>Learn More</value>
+  </data>
+  <data name="LinkedToCourse" xml:space="preserve">
+    <value>Linked to course</value>
+  </data>
+  <data name="Links" xml:space="preserve">
+    <value>Links</value>
+  </data>
+  <data name="LinkToCourses" xml:space="preserve">
+    <value>Link to courses</value>
+  </data>
+  <data name="LIV" xml:space="preserve">
+    <value>LIV</value>
+  </data>
+  <data name="Live" xml:space="preserve">
+    <value>Live</value>
+  </data>
+  <data name="LiveEdit" xml:space="preserve">
+    <value>Live edit</value>
+  </data>
+  <data name="LoginDateTime" xml:space="preserve">
+    <value>Login date and time </value>
+  </data>
+  <data name="LoginPage" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="LoginReport" xml:space="preserve">
+    <value>Login activity report</value>
+  </data>
+  <data name="LogOut" xml:space="preserve">
+    <value>log out</value>
+  </data>
+  <data name="MsgArticleSaved" xml:space="preserve">
+    <value>Article saved</value>
+  </data>
+  <data name="MsgExternalLinkSaved" xml:space="preserve">
+    <value>Link with title {0} successfully {1}. Please refresh the page to {2} link in Links menu tab.</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="NotApproved" xml:space="preserve">
+    <value>Not approved</value>
+  </data>
+  <data name="NotApprovedFeedback" xml:space="preserve">
+    <value>Need Improvement</value>
+  </data>
+  <data name="NoteCloneAssignment" xml:space="preserve">
+    <value>Note: When cloning an assignment you cannot change the subject or qualification suite.</value>
+  </data>
+  <data name="OK" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="OptOutReport" xml:space="preserve">
+    <value>Opt out data report</value>
+  </data>
+  <data name="OptOutText" xml:space="preserve">
+    <value>Based on your usage of myBTEC, we will send you emails and communications recommending how you can make even better use of myBTEC services. Tick here if you do not want to receive this information.</value>
+  </data>
+  <data name="Pearson" xml:space="preserve">
+    <value>Pearson</value>
+  </data>
+  <data name="Preview" xml:space="preserve">
+    <value>Preview</value>
+  </data>
+  <data name="PrivacyPolicy" xml:space="preserve">
+    <value>Privacy Policy</value>
+  </data>
+  <data name="Qualification" xml:space="preserve">
+    <value>Qualification</value>
+  </data>
+  <data name="QualificationSuite" xml:space="preserve">
+    <value>Qualification suite</value>
+  </data>
+  <data name="QualificationAwardSport" xml:space="preserve">
+    <value>Edexcel BTEC Level 1/Level 2 First Award in Sport (Award)</value>
+  </data>
+  <data name="QualificationCertificateAppliedScience" xml:space="preserve">
+    <value>Edexcel BTEC Level 1/Level 2 First Extended Certificate in Applied Science</value>
+  </data>
+  <data name="QualificationName" xml:space="preserve">
+    <value>Qualification name</value>
+  </data>
+  <data name="ReadLaterNews" xml:space="preserve">
+    <value>Read later and go to my BTEC</value>
+  </data>
+  <data name="RemoveFromCourse" xml:space="preserve">
+    <value>Remove from course</value>
+  </data>
+  <data name="Reports" xml:space="preserve">
+    <value>Reports</value>
+  </data>
+  <data name="ReportsPage" xml:space="preserve">
+    <value>Reports</value>
+  </data>
+  <data name="Resources" xml:space="preserve">
+    <value>Support</value>
+  </data>
+  <data name="Restore" xml:space="preserve">
+    <value>Restore</value>
+  </data>
+  <data name="Review" xml:space="preserve">
+    <value>Review</value>
+  </data>
+  <data name="ReviewPage" xml:space="preserve">
+    <value>Review</value>
+  </data>
+  <data name="RoleClaimed" xml:space="preserve">
+    <value>Role claimed</value>
+  </data>
+  <data name="RoleForCentre" xml:space="preserve">
+    <value>Role for centre</value>
+  </data>
+  <data name="RolesReport" xml:space="preserve">
+    <value>Role claim report</value>
+  </data>
+  <data name="Select" xml:space="preserve">
+    <value>Select ...</value>
+  </data>
+  <data name="SelectAction" xml:space="preserve">
+    <value>Select an action</value>
+  </data>
+  <data name="SelectPathway" xml:space="preserve">
+    <value>Select a pathway</value>
+  </data>
+  <data name="SelectQualification" xml:space="preserve">
+    <value>Select qualification suite</value>
+  </data>
+  <data name="SelectSize" xml:space="preserve">
+    <value>Select qualification size</value>
+  </data>
+  <data name="SelectSubject" xml:space="preserve">
+    <value>Select a subject</value>
+  </data>
+  <data name="SelectUnit" xml:space="preserve">
+    <value>Select a unit</value>
+  </data>
+  <data name="SendToACS" xml:space="preserve">
+    <value>Send to ACS</value>
+  </data>
+  <data name="SendToIV" xml:space="preserve">
+    <value>Send to IV</value>
+  </data>
+  <data name="SendToIvPage" xml:space="preserve">
+    <value>SendToIv</value>
+  </data>
+  <data name="SessionExpires" xml:space="preserve">
+    <value>Your myBTEC session is about to time-out. Would you like to remain logged on?</value>
+  </data>
+  <data name="SessionTimeRemaining" xml:space="preserve">
+    <value>Time remaining:</value>
+  </data>
+  <data name="SiteQN" xml:space="preserve">
+    <value>Site QN</value>
+  </data>
+  <data name="Subject" xml:space="preserve">
+    <value>Subject</value>
+  </data>
+  <data name="SubmitEnquiry" xml:space="preserve">
+    <value>Submit enquiry</value>
+  </data>
+  <data name="Teacher" xml:space="preserve">
+    <value>Teacher</value>
+  </data>
+  <data name="TermsOfUse" xml:space="preserve">
+    <value>Terms of Use</value>
+  </data>
+  <data name="TermsPage" xml:space="preserve">
+    <value>Terms</value>
+  </data>
+  <data name="TestCentreNumber" xml:space="preserve">
+    <value>99000 99000 99000</value>
+  </data>
+  <data name="TestCentreName" xml:space="preserve">
+    <value>JONATHAN SOANES</value>
+  </data>
+  <data name="TestText" xml:space="preserve">
+    <value>Test{0}</value>
+  </data>
+  <data name="TestUrl" xml:space="preserve">
+    <value>www.google.com/search?q={0}</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>Title</value>
+  </data>
+  <data name="UnauthorisedText" xml:space="preserve">
+    <value>Sorry, you do not have permission to access myBTEC. If you are a centre user please contact your Exams Officer or Centre Administrator.</value>
+  </data>
+  <data name="UnauthorisedTitle" xml:space="preserve">
+    <value>Access not allowed</value>
+  </data>
+  <data name="Url" xml:space="preserve">
+    <value>Url</value>
+  </data>
+  <data name="UserEmailAddress" xml:space="preserve">
+    <value>User email address</value>
+  </data>
+  <data name="UserID" xml:space="preserve">
+    <value>User ID</value>
+  </data>
+  <data name="UserRoleApprovalPage" xml:space="preserve">
+    <value>RoleApproval</value>
+  </data>
+  <data name="ValidationAssignmentCoverage" xml:space="preserve">
+    <value>Please indicate whether this assignment brief covers a whole unit or part(s) of unit(s).</value>
+  </data>
+  <data name="ValidationFieldRequired" xml:space="preserve">
+    <value>The {0} field is required.</value>
+  </data>
+  <data name="ValidationHtmlTags" xml:space="preserve">
+    <value>HTML tags and scripts are not allowed!</value>
+  </data>
+  <data name="ValidationLength" xml:space="preserve">
+    <value>The field {0} must be a string with a maximum length of {1}.</value>
+  </data>
+  <data name="ValidationNoUnitsAdded" xml:space="preserve">
+    <value>Please select at least one unit.</value>
+  </data>
+  <data name="ValidationSpecialChars" xml:space="preserve">
+    <value>The field can only contain alpha numeric characters. Special characters are not supported</value>
+  </data>
+  <data name="View" xml:space="preserve">
+    <value>View</value>
+  </data>
+  <data name="ViewIvFeedback" xml:space="preserve">
+    <value>View IV feedback</value>
+  </data>
+  <data name="WithIV" xml:space="preserve">
+    <value>With IV</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="Create" xml:space="preserve">
+    <value>Create</value>
+  </data>
+  <data name="EmailBodyAddedInCourseTeam" xml:space="preserve">
+    <value>\r\n        Dear {0} {1} \r\n\r\n\r\nYou have been added to the following course within myBTEC:\r\n\r\n\r\n\r\n{2}\r\n\r\n\r\n\r\nYour role on the course is {3}.\r\n\r\n\r\nIf you have any questions please contact {4} {5}  who added you to this course. The email address to use is {6}.\r\n\r\n\r\nThank you.\r\n\r\n\r\n{7}\r\n    \r\n\r\n</value>
+  </data>
+  <data name="EmailBodyRemovedFromCourseTeam" xml:space="preserve">
+    <value>\r\n      Dear {0} {1} \r\n      \r\n      Your role of {2} on the {3} course has been removed.\r\n            \r\n      If you have any questions please contact {4} {5}  who removed your role. The email address to use is {6}. \r\n            \r\n      Thank you. \r\n      \r\n      {7}\r\n    \r\n\r\n</value>
+  </data>
+  <data name="EmailSubjectCourseLeaderAdded" xml:space="preserve">
+    <value>myBTEC - Course Leaders</value>
+  </data>
+  <data name="EmailSubjectRemovedFromCourseTeam" xml:space="preserve">
+    <value>myBTEC - Role removed from course team</value>
+  </data>
+  <data name="EmailSubjectTeamMemberAdded" xml:space="preserve">
+    <value>myBTEC - Team members</value>
+  </data>
+  <data name="NotePendingUserAssignmentStep4" xml:space="preserve">
+    <value>Please note: You cannot currently send this assignment for review as your role is still in a pending state for this subject. You must have your role approved in this subject before you can send this assignment for review.</value>
+  </data>
+  <data name="NotePendingUserCourseStep3" xml:space="preserve">
+    <value>Your course is ready to be confirmed but please note: You cannot currently confirm this course as your role is still in a pending state for this subject. You must have your role approved in this subject before you can confirm this course.</value>
+  </data>
+  <data name="FinalSubmission" xml:space="preserve">
+    <value>Final submission</value>
+  </data>
+  <data name="FirstSubmission" xml:space="preserve">
+    <value>First submission</value>
+  </data>
+  <data name="StartDate" xml:space="preserve">
+    <value>Start date</value>
+  </data>
+  <data name="ValidationAddAssessor" xml:space="preserve">
+    <value>Add at least one Assessor to coversheet.</value>
+  </data>
+  <data name="ValidationAddIV" xml:space="preserve">
+    <value>Add at least one Internal Verifier to coversheet.</value>
+  </data>
+  <data name="ValidationFinalSubmissionLaterEndDate" xml:space="preserve">
+    <value>Coversheet Final Submission date cannot be later than Course End date.</value>
+  </data>
+  <data name="ValidationFirstSubmissionLaterFinal" xml:space="preserve">
+    <value>Coversheet First Submission date cannot be later than Final Submission date.</value>
+  </data>
+  <data name="ValidationStartDateEarlierCourseStartDate" xml:space="preserve">
+    <value>Coversheet Start date cannot be earlier than Course Start date.</value>
+  </data>
+  <data name="ValidationStartDateLaterFirst" xml:space="preserve">
+    <value>Coversheet Start date cannot be later than First Submission date.</value>
+  </data>
+  <data name="ACSPopupContent" xml:space="preserve">
+    <value>You will need to attach your assignment brief to the Assignment Checking Service application form.\r\nYou can download your brief below.</value>
+  </data>
+  <data name="ACSUrl" xml:space="preserve">
+    <value>http://qualifications.pearson.com/en/support/Services/assignment-checking-service.html</value>
+  </data>
+  <data name="EmailBodyAssignmentSentToIv" xml:space="preserve">
+    <value>\r\n        Dear {0} {1}\r\n        \r\n        The following assignment has been sent to you for review.\r\n        \r\n        Assignment Brief title: {2}\r\n        Creator: {3} {4}\r\n        Subject: {5}\r\n        Courses: {6}\r\n         \r\n        Please  log in to myBTEC, find this assignment brief and then choose Review in the Action dropdown. \r\n        \r\n        Thank you.\r\n        \r\n        {7}\r\n</value>
+  </data>
+  <data name="EmailSubjectAssignmentSentToIv" xml:space="preserve">
+    <value>myBTEC - Assignment Brief Review</value>
+  </data>
+  <data name="ValidationAssessmentAndGradingCriteriaForUnit" xml:space="preserve">
+    <value>Assessment and grading criteria for unit: {0}</value>
+  </data>
+  <data name="ValidationAssessmentCriteriaMissing" xml:space="preserve">
+    <value>At least one assessment criteria should be selected for each unit.</value>
+  </data>
+  <data name="ValidationDidNotSucceed" xml:space="preserve">
+    <value>Validation did not succeed.</value>
+  </data>
+  <data name="BuyPearsonResources" xml:space="preserve">
+    <value>Buy Pearson Resources</value>
+  </data>
+  <data name="CentreResources" xml:space="preserve">
+    <value>Centre Resources</value>
+  </data>
+  <data name="ResourcesPage" xml:space="preserve">
+    <value>Resource</value>
+  </data>
+  <data name="WishList" xml:space="preserve">
+    <value>Wish List</value>
+  </data>
+  <data name="PearsonResources" xml:space="preserve">
+    <value>Pearson Resources</value>
+  </data>
+  <data name="WishListSummaryOnePack" xml:space="preserve">
+    <value>{0} Resource pack:{1:C}</value>
+  </data>
+  <data name="WishListSummaryPacks" xml:space="preserve">
+    <value>{0} Resource packs:{1:C}</value>
+  </data>
+  <data name="AddToWishList" xml:space="preserve">
+    <value>Add to Wish List</value>
+  </data>
+  <data name="BuyNow" xml:space="preserve">
+    <value>Buy now</value>
+  </data>
+  <data name="Export" xml:space="preserve">
+    <value>Export</value>
+  </data>
+  <data name="NoteWishList90Days" xml:space="preserve">
+    <value>Please note: Items on this wish list will only be displayed for 90 days.</value>
+  </data>
+  <data name="RemoveFromWishList" xml:space="preserve">
+    <value>Remove from Wish List</value>
+  </data>
+  <data name="ValidationErrorISBN" xml:space="preserve">
+    <value>ISBN should be a 13 digit number without any spaces. It should also not contain only zeros - free resources are accessible in Centre resources tab.</value>
+  </data>
+  <data name="ViewQualification" xml:space="preserve">
+    <value>View qualification</value>
+  </data>
+  <data name="ViewQualificationStep1" xml:space="preserve">
+    <value>ViewQualification</value>
+  </data>
+  <data name="ViewQualificationStep2" xml:space="preserve">
+    <value>ViewQualificationUnits</value>
+  </data>
+  <data name="CentreNumber" xml:space="preserve">
+    <value>Centre number</value>
+  </data>
+  <data name="CentreName" xml:space="preserve">
+    <value>Centre name</value>
+  </data>
+  <data name="PearsonCentre" xml:space="preserve">
+    <value>Pearson</value>
+  </data>
+  <data name="TestLink" xml:space="preserve">
+    <value>&lt;a href="https://www.google.md/search?q={0}"&gt;{0}&lt;/a&gt;</value>
+  </data>
+  <data name="ValidationNoTeamForCoversheet" xml:space="preserve">
+    <value>This course has no {0} added. Please add an {0} to the course team before creating any coversheets.</value>
+  </data>
+  <data name="ErrorCanNotCreateCoversheet" xml:space="preserve">
+    <value>You cannot create coversheet for course assignment because you are not a team member for this course.</value>
+  </data>
+  <data name="ErrorCanNotRemoveAssignment" xml:space="preserve">
+    <value>You cannot remove assignment from course because you are not a team member for this course.</value>
+  </data>
+  <data name="GridDataCounter" xml:space="preserve">
+    <value>View {0} - {1} of {2}</value>
+  </data>
+  <data name="ConfirmExitCourseStep1" xml:space="preserve">
+    <value>Exiting now will lose any work you've done so far creating this course. Click Yes to exit or No to remain on this page.</value>
+  </data>
+  <data name="Pathway" xml:space="preserve">
+    <value>Pathway</value>
+  </data>
+  <data name="Size" xml:space="preserve">
+    <value>Size</value>
+  </data>
+  <data name="CentreAssignments" xml:space="preserve">
+    <value>centre assignments</value>
+  </data>
+  <data name="CentreCourses" xml:space="preserve">
+    <value>centre courses</value>
+  </data>
+  <data name="CreateACourse" xml:space="preserve">
+    <value>create a course</value>
+  </data>
+  <data name="CreateAnAssignment" xml:space="preserve">
+    <value>create an assignment</value>
+  </data>
+  <data name="MyAssignments" xml:space="preserve">
+    <value>my assignments</value>
+  </data>
+  <data name="MyCourses" xml:space="preserve">
+    <value>my courses</value>
+  </data>
+  <data name="CloneCourse" xml:space="preserve">
+    <value>Clone course</value>
+  </data>
+  <data name="DownloadCourse" xml:space="preserve">
+    <value>Download course</value>
+  </data>
+  <data name="EditCourse" xml:space="preserve">
+    <value>edit course</value>
+  </data>
+  <data name="ExportAsExcel" xml:space="preserve">
+    <value>Export as excel</value>
+  </data>
+  <data name="ConfirmExitCourseStep1New" xml:space="preserve">
+    <value>Are you sure you want to exit? Your course changes will be saved as draft.</value>
+  </data>
+  <data name="AssignmentStep4WarningMessage" xml:space="preserve">
+    <value>Your assignment cannot be sent because there is missing mandatory information. Please make sure you have completed the mandatory fields and have all the assessment criteria covered by tasks.</value>
+  </data>
+  <data name="CoursesLinked" xml:space="preserve">
+    <value>Courses linked</value>
+  </data>
+  <data name="DateApproved" xml:space="preserve">
+    <value>Date approved</value>
+  </data>
+  <data name="QAN" xml:space="preserve">
+    <value>QAN</value>
+  </data>
+  <data name="ResourceDownloadReport" xml:space="preserve">
+    <value>Resource Download</value>
+  </data>
+</root>

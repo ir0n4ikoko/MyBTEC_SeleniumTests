@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Edi.Advance.BTEC.UiTests.Framework.PageBase">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAgAAAAAAAIgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Framework\PageBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Edi.Advance.BTEC.UiTests.Framework.Navigator">
+    <Position X="3" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>mQAAEAAQACAAMAAAAMAAAAAAAAAAAAAAAgASAgAACCQ=</HashCode>
+      <FileName>Framework\Navigator.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.179" />
+  </Class>
+  <Class Name="Edi.Advance.BTEC.UiTests.TestBase&lt;TDriver&gt;">
+    <Position X="5.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAACAAAAgAAAAABAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TestBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Edi.Advance.BTEC.UiTests.Framework.FlowBase&lt;TFlow&gt;">
+    <Position X="0.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Framework\FlowBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="Edi.Advance.BTEC.UiTests.Framework.INavigator">
+    <Position X="3" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CQAAAAAAAAAAIAAAAMAAAAAAAAAAAAAAAAAQAgAAAAQ=</HashCode>
+      <FileName>Framework\INavigator.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>

@@ -1,0 +1,1450 @@
+<?xml version="1.0"?>
+<doc>
+  <assembly>
+    <name>Bytescout.BarCodeReader</name>
+  </assembly>
+  <members>
+    <member name="T:Bytescout.BarCodeReader.BarcodeException">
+      <summary>
+            Represents errors that occur during <see cref="N:Bytescout.BarCodeReader" /> class library execution.
+            </summary>
+    </member>
+    <member name="M:Bytescout.BarCodeReader.BarcodeException.#ctor(System.String)">
+      <summary>
+            Initializes a new instance of the <see cref="T:Bytescout.BarCodeReader.BarcodeException" /> class with a specified error message.
+            </summary>
+      <param name="message">The exception message that describes the error.</param>
+    </member>
+    <member name="M:Bytescout.BarCodeReader.BarcodeException.#ctor(System.String,System.Exception)">
+      <summary>
+             Initializes a new instance of the <see cref="T:Bytescout.BarCodeReader.BarcodeException" /> class with a specified error message and inner exception.
+            </summary>
+      <param name="message">The exception message that describes the error.</param>
+      <param name="innerException">The inner exception.</param>
+    </member>
+    <member name="T:Bytescout.BarCodeReader.BarcodeFoundEventArgs">
+      <summary>
+            Contains event arguments used by <see cref="T:Bytescout.BarCodeReader.Reader.BarcodeFoundEventHandler" /></summary>
+    </member>
+    <member name="M:Bytescout.BarCodeReader.BarcodeFoundEventArgs.#ctor(Bytescout.BarCodeReader.FoundBarcode,System.Int32)">
+      <summary>
+            Initializes a new instance of the <see cref="T:Bytescout.BarCodeReader.BarcodeFoundEventArgs" /> class.
+            </summary>
+      <param name="barcode">The found barcode.</param>
+      <param name="count">The number of barcodes found during last 
+            read session (including this one).</param>
+    </member>
+    <member name="P:Bytescout.BarCodeReader.BarcodeFoundEventArgs.Barcode">
+      <summary>
+            Gets the information about last found barcode.
+            </summary>
+      <value>The information about last found barcode.</value>
+    </member>
+    <member name="P:Bytescout.BarCodeReader.BarcodeFoundEventArgs.Cancel">
+      <summary>
+            Gets or sets a value indicating whether to abort barcode detection.
+            </summary>
+      <value>
+        <c>true</c> if to abort barcode detection; otherwise, <c>false</c>.</value>
+    </member>
+    <member name="P:Bytescout.BarCodeReader.BarcodeFoundEventArgs.Count">
+      <summary>
+            Gets the number of barcodes found during last read session.
+            </summary>
+      <value>The number of barcodes found during last read session.</value>
+    </member>
+    <member name="T:ConvexHullAlgorithm.Convexhull">
+      <summary>
+      </summary>
+    </member>
+    <member name="M:ConvexHullAlgorithm.Convexhull.convexhull(ConvexHullAlgorithm.Point[])">
+      <summary>
+            Convexhulls the specified PTS.
+            </summary>
+      <param name="pts">The PTS.</param>
+      <returns>
+      </returns>
+    </member>
+    <member name="T:ConvexHullAlgorithm.Point">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:ConvexHullAlgorithm.Point.x">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:ConvexHullAlgorithm.Point.y">
+      <summary>
+      </summary>
+    </member>
+    <member name="M:ConvexHullAlgorithm.Point.#ctor(System.Double,System.Double)">
+      <summary>
+            Initializes a new instance of the <see cref="T:ConvexHullAlgorithm.Point" /> class.
+            </summary>
+      <param name="x">The x.</param>
+      <param name="y">The y.</param>
+    </member>
+    <member name="M:ConvexHullAlgorithm.Point.ToString">
+      <summary>
+            Returns a <see cref="T:System.String" /> that represents this instance.
+            </summary>
+      <returns>
+            A <see cref="T:System.String" /> that represents this instance.
+            </returns>
+    </member>
+    <member name="M:ConvexHullAlgorithm.Point.Random(System.Int32,System.Int32)">
+      <summary>
+            Randoms the specified w.
+            </summary>
+      <param name="w">The w.</param>
+      <param name="h">The h.</param>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:ConvexHullAlgorithm.Point.Equals(ConvexHullAlgorithm.Point)">
+      <summary>
+            Equalses the specified p2.
+            </summary>
+      <param name="p2">The p2.</param>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:ConvexHullAlgorithm.Point.Less(System.Object)">
+      <summary>
+            Lesses the specified o2.
+            </summary>
+      <param name="o2">The o2.</param>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:ConvexHullAlgorithm.Point.Area2(ConvexHullAlgorithm.Point,ConvexHullAlgorithm.Point,ConvexHullAlgorithm.Point)">
+      <summary>
+            Area2s the specified p0.
+            </summary>
+      <param name="p0">The p0.</param>
+      <param name="p1">The p1.</param>
+      <param name="p2">The p2.</param>
+      <returns>
+      </returns>
+    </member>
+    <member name="T:ConvexHullAlgorithm.CDLL">
+      <summary>
+      </summary>
+    </member>
+    <member name="F:ConvexHullAlgorithm.CDLL.val">
+      <summary>
+      </summary>
+    </member>
+    <member name="M:ConvexHullAlgorithm.CDLL.#ctor(ConvexHullAlgorithm.Point)">
+      <summary>
+            Initializes a new instance of the <see cref="T:ConvexHullAlgorithm.CDLL" /> class.
+            </summary>
+      <param name="val">The val.</param>
+    </member>
+    <member name="M:ConvexHullAlgorithm.CDLL.Delete">
+      <summary>
+            Deletes this instance.
+            </summary>
+    </member>
+    <member name="M:ConvexHullAlgorithm.CDLL.Prepend(ConvexHullAlgorithm.CDLL)">
+      <summary>
+            Prepends the specified elt.
+            </summary>
+      <param name="elt">The elt.</param>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:ConvexHullAlgorithm.CDLL.Append(ConvexHullAlgorithm.CDLL)">
+      <summary>
+            Appends the specified elt.
+            </summary>
+      <param name="elt">The elt.</param>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:ConvexHullAlgorithm.CDLL.Size">
+      <summary>
+            Sizes this instance.
+            </summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:ConvexHullAlgorithm.CDLL.PrintFwd">
+      <summary>
+            Prints the FWD.
+            </summary>
+    </member>
+    <member name="M:ConvexHullAlgorithm.CDLL.CopyInto(ConvexHullAlgorithm.Point[],System.Int32)">
+      <summary>
+            Copies the into.
+            </summary>
+      <param name="vals">The vals.</param>
+      <param name="i">The i.</param>
+    </member>
+    <member name="P:ConvexHullAlgorithm.CDLL.Prev">
+      <summary>
+            Gets the prev.
+            </summary>
+    </member>
+    <member name="P:ConvexHullAlgorithm.CDLL.Next">
+      <summary>
+            Gets the next.
+            </summary>
+    </member>
+    <member name="T:ConvexHullAlgorithm.Polysort">
+      <summary>
+      </summary>
+    </member>
+    <member name="M:ConvexHullAlgorithm.Polysort.Quicksort(ConvexHullAlgorithm.Point[])">
+      <summary>
+            Quicksorts the specified arr.
+            </summary>
+      <param name="arr">The arr.</param>
+    </member>
+    <member name="T:Bytescout.BarCodeReader.LastDecodingTime">
+      <summary>
+            LastDecodingTime class represents decoding time information.
+            </summary>
+    </member>
+    <member name="M:Bytescout.BarCodeReader.LastDecodingTime.#ctor">
+      <summary>
+            Initializes a new instance of the <see cref="T:Bytescout.BarCodeReader.LastDecodingTime" /> class.
+            </summary>
+    </member>
+    <member name="M:Bytescout.BarCodeReader.LastDecodingTime.#ctor(System.TimeSpan,System.TimeSpan,System.TimeSpan,System.TimeSpan,System.TimeSpan,System.TimeSpan,System.TimeSpan)">
+      <summary>
+            Initializes a new instance of the <see cref="T:Bytescout.BarCodeReader.LastDecodingTime" /> class.
+            </summary>
+    </member>
+    <member name="M:Bytescout.BarCodeReader.LastDecodingTime.op_Addition(Bytescout.BarCodeReader.LastDecodingTime,Bytescout.BarCodeReader.LastDecodingTime)">
+      <summary>
+            Implements the operator +.
+            </summary>
+      <param name="a">First <see cref="T:Bytescout.BarCodeReader.LastDecodingTime" /> value.</param>
+      <param name="b">The second <see cref="T:Bytescout.BarCodeReader.LastDecodingTime" />.</param>
+      <returns>The result of the operator.</returns>
+    </member>
+    <member name="P:Bytescout.BarCodeReader.LastDecodingTime.ElapsedAll">
+      <summary>
+            Time spent on 1st pass of 1D barcodes recognition.
+            </summary>
+      <value>The time value.</value>
+    </member>
+    <member name="P:Bytescout.BarCodeReader.LastDecodingTime.ElapsedPreparations">
+      <summary>
+            Time spent on preparations.
+            </summary>
+      <value>The time value.</value>
+    </member>
+    <member name="P:Bytescout.BarCodeReader.LastDecodingTime.Elapsed1DFirstPass">
+      <summary>
+            Time spent on 1st pass of 1D barcodes recognition.
+            </summary>
+      <value>The time value.</value>
+    </member>
+    <member name="P:Bytescout.BarCodeReader.LastDecodingTime.ElapsedAnalysis">
+      <summary>
+            Time spent on recognition of barcodes on a page.
+            </summary>
+      <value>The time value.</value>
+    </member>
+    <member name="P:Bytescout.BarCodeReader.LastDecodingTime.ElapsedPDF417">
+      <summary>
+            Time spent on PDF417 barcodes decoding.
+            </summary>
+      <value>The time value.</value>
+    </member>
+    <member name="P:Bytescout.BarCodeReader.LastDecodingTime.ElapsedDatamatrix">
+      <summary>
+            Time spent on DataMatrix barcodes decoding.
+            </summary>
+      <value>The time value.</value>
+    </member>
+    <member name="P:Bytescout.BarCodeReader.LastDecodingTime.ElapsedQRCode">
+      <summary>
+            Time spent on QR Code barcodes decoding.
+            </summary>
+      <value>The time value.</value>
+    </member>
+    <member name="P:Bytescout.BarCodeReader.LastDecodingTime.ElapsedAztec">
+      <summary>
+            Time spent on Aztec barcodes decoding.
+            </summary>
+      <value>The time value.</value>
+    </member>
+    <member name="T:Bytescout.BarCodeReader.IReader">
+      <summary>
+            Base interface for class that reads barcodes from images
+            </summary>
+    </member>
+    <member name="M:Bytescout.BarCodeReader.IReader.GetImagePageCount(System.Drawing.Image)">
+      <summary>
+            Gets the number of pages in specified image.
+            </summary>
+      <param name="img">The image whose number of pages to
+            retrieve.</param>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Bytescout.BarCodeReader.IReader.ReadFrom(System.Drawing.Bitmap)">
+      <summary>
+            Reads barcodes from all pages of the image in the Bitmap object.
+            </summary>
+      <param name="bmp">The Bitmap object containing an image.</param>
+      <returns>Array of FoundBarcode objects whose elements describe
+            found barcodes.</returns>
+    </member>
+    <member name="M:Bytescout.BarCodeReader.IReader.ReadFromHBitmap(System.Int64)">
+      <summary>
+            Reads barcodes from the image pointed to by HBITMAP handle.
+            </summary>
+      <param name="hbmp">The HBITMAP handle for an image.</param>
+    </member>
+    <member name="M:Bytescout.BarCodeReader.IReader.GetFoundBarcodeType(System.Int32)">
+      <summary>
+            Gets the type of the found barcode.
+            </summary>
+      <param name="barcodeIndex">Index of the barcode.</param>
+      <returns>The type of the found barcode.</returns>
+    </member>
+    <member name="M:Bytescout.BarCodeReader.IReader.GetFoundBarcodeValue(System.Int32)">
+      <summary>
+            Gets the found barcode value.
+            </summary>
+      <param name="barcodeIndex">Index of the barcode.</param>
+      <returns>The found barcode value.</returns>
+    </member>
+    <member name="M:Bytescout.BarCodeReader.IReader.GetFoundBarcodePage(System.Int32)">
+      <summary>
+            Gets the number of page where barcode was found.
+            </summary>
+      <param name="barcodeIndex">Index of the barcode.</param>
+      <returns>The number of page where barcode was found.</returns>
+    </member>
+    <member name="M:Bytescout.BarCodeReader.IReader.GetFoundBarcodeLeft(System.Int32)">
+      <summary>
+            Gets the X coordinate of found barcode.
+            </summary>
+      <param name="barcodeIndex">Index of the barcode.</param>
+      <returns>The X coordinate of found barcode.</returns>
+    </member>
+    <member name="M:Bytescout.BarCodeReader.IReader.GetFoundBarcodeTop(System.Int32)">
+      <summary>
+            Gets the Y coordinate of found barcode.
+            </summary>
+      <param name="barcodeIndex">Index of the barcode.</param>
+      <returns>The Y coordinate of found barcode.</returns>
+    </member>
+    <member name="M:Bytescout.BarCodeReader.IReader.GetFoundBarcodeWidth(System.Int32)">
+      <summary>
+            Gets the width of found barcode.
+            </summary>
+      <param name="barcodeIndex">Index of the barcode.</param>
+      <returns>The width of found barcode.</returns>
+    </member>
+    <member name="M:Bytescout.BarCodeReader.IReader.GetFoundBarcodeHeight(System.Int32)">
+      <summary>
+            Gets the height of found barcode.
+            </summary>
+      <param name="barcodeIndex">Index of the barcode.</param>
+      <returns>The height of found barcode.</returns>
+    </member>
+    <member name="M:Bytescout.BarCodeReader.IReader.ReadFrom(System.Drawing.Bitmap,System.Int32)">
+      <summary>
+            Reads barcodes from the specified page of the image in the
+            Bitmap object.
+            </summary>
+      <param name="bmp">The Bitmap object to read barcodes from.</param>
+      <param name="page">The page to find barcodes at.</param>
+      <returns>
+            Array of FoundBarcode objects whose elements describe found
+            barcodes.
+            </returns>
+    </member>
+    <member name="M:Bytescout.BarCodeReader.IReader.ReadFrom(System.String)">
+      <summary>
+            Reads barcodes from all pages of the image in the specified file.
+            </summary>
+      <param name="fileName">Name of the image file to read barcodes
+            from.</param>
+      <returns>
+            Array of FoundBarcode objects whose elements describe found
+            barcodes.
+            </returns>
+    </member>
+    <member name="M:Bytescout.BarCodeReader.IReader.ReadFromFile(System.String)">
+      <summary>
+            Reads barcodes from all pages of the image in the specified file.
+            </summary>
+      <param name="fileName">Name of the image file to read barcodes
+            from.</param>
+    </member>
+    <member name="M:Bytescout.BarCodeReader.IReader.ReadFrom(System.String,System.Int32)">
+      <summary>
+            Reads barcodes from specified page of the image in the specified
+            file.
+            </summary>
+      <param name="fileName">Name of the image file to read barcodes
+            from.</param>
+      <param name="page">The page to read barcodes from.</param>
+      <returns>
+            Array of FoundBarcode objects whose elements describe found
+            barcodes.
+            </returns>
+    </member>
+    <member name="M:Bytescout.BarCodeReader.IReader.ReadFromFilePage(System.String,System.Int32)">
+      <summary>
+            Reads barcodes from specified page of the image in the specified
+            file.
+            </summary>
+      <param name="fileName">Name of the image file to read barcodes
+            from.</param>
+      <param name="page">The page to read barcodes from.</param>
+    </member>
+    <member name="M:Bytescout.BarCodeReader.IReader.ReadFromPdfFile(System.String)">
+      <summary>
+             Reads barcodes from all pages of specified PDF document.
+            </summary>
+      <param name="fileName">PDF file name.</param>
+    </member>
+    <member name="M:Bytescout.BarCodeReader.IReader.ReadFromPdfFile(System.IO.Stream)">
+      <summary>
+             Reads barcodes from all pages of provided PDF document.
+            </summary>
+      <param name="fileStream">PDF file stream.</param>
+    </member>
+    <member name="M:Bytescout.BarCodeReader.IReader.ReadFromPdfFilePage(System.String,System.Int32,System.Int32)">
+      <summary>
+             Reads barcodes from specified pages of PDF document.
+            </summary>
+      <param name="fileName">PDF file name.</param>
+      <param name="startPage">Zero-based start page index.</param>
+      <param name="pageCount">Count of pages to process from the start page. Specify -1 for all pages.</param>
+    </member>
+    <member name="M:Bytescout.BarCodeReader.IReader.ReadFromPdfFilePage(System.IO.Stream,System.Int32,System.Int32)">
+      <summary>
+             Reads barcodes from specified pages of provided PDF document.
+            </summary>
+      <param name="fileStream">PDF file stream.</param>
+      <param name="startPage">Zero-based start page index.</param>
+      <param name="pageCount">Count of pages to process from the start page. Specify -1 for all pages.</param>
+    </member>
+    <member name="P:Bytescout.BarCodeReader.IReader.RegistrationName">
+      <summary>
+            Gets or sets the name part of the registration information.
+            </summary>
+      <value>The name part of the registration information.</value>
+    </member>
+    <member name="P:Bytescout.BarCodeReader.IReader.RegistrationKey">
+      <summary>
+            Gets or sets the key number part of registration information.
+            </summary>
+      <value>The key number part of registration information.</value>
+    </member>
+    <member name="P:Bytescout.BarCodeReader.IReader.CustomArea">
+      <summary>
+            Gets or sets custom scan area to find barcodes within.
+            </summary>
+      <value>Custom scan area to find barcodes within.</value>
+    </member>
+    <member name="P:Bytescout.BarCodeReader.IReader.CustomAreaLeft">
+      <summary>
+            Gets or sets leftmost position of custom scan area to find
+            barcodes within.
+            </summary>
+      <value>Leftmost position of custom scan area to find barcodes
+            within.</value>
+    </member>
+    <member name="P:Bytescout.BarCodeReader.IReader.CustomAreaTop">
+      <summary>
+            Gets or sets topmost position of custom scan area to find
+            barcodes within.
+            </summary>
+      <value>Topmost position of custom scan area to find barcodes
+            within.</value>
+    </member>
+    <member name="P:Bytescout.BarCodeReader.IReader.CustomAreaWidth">
+      <summary>
+            Gets or sets width of custom scan area to find barcodes within.
+            </summary>
+      <value>Width of custom scan area to find barcodes within.</value>
+    </member>
+    <member name="P:Bytescout.BarCodeReader.IReader.CustomAreaHeight">
+      <summary>
+            Gets or sets height of custom scan area to find barcodes within.
+            </summary>
+      <value>Height of custom scan area to find barcodes within.</value>
+    </member>
+    <member name="P:Bytescout.BarCodeReader.IReader.MinObjectSizeInPixels">
+      <summary>
+            Gets or sets the minimal size of a 2d barcode in pixels.
+            </summary>
+      <value>The minimal size of a 2d barcode in pixels.</value>
+    </member>
+    <member name="P:Bytescout.BarCodeReader.IReader.ScanArea">
+      <summary>
+            Gets or sets the friendly name of the scan area.
+            </summary>
+      <value>The friendly name of the scan area.</value>
+    </member>
+    <member name="P:Bytescout.BarCodeReader.IReader.TypeToFind">
+      <summary>
+            Gets or sets the symbology type to find. Barcodes with other
+            symbology types won't be found.
+            </summary>
+      <value>The symbology type to find.</value>
+    </member>
+    <member name="P:Bytescout.BarCodeReader.IReader.Orientation">
+      <summary>
+            Gets or sets the barcode orientation(s) to search.
+            </summary>
+      <value>The barcode orientation(s) to search.</value>
+    </member>
+    <member name="P:Bytescout.BarCodeReader.IReader.SearchMirrored">
+      <summary>
+            Gets or sets a value indicating whether to search for mirrored barcodes.
+            </summary>
+      <value>
+        <c>true</c> if search for mirrored barcodes; otherwise, <c>false</c>.</value>
+    </member>
+    <member name="P:Bytescout.BarCodeReader.IReader.SearchNegative">
+      <summary>
+            Gets or sets a value indicating whether to search for negative barcodes.
+            </summary>
+      <value>
+        <c>true</c> if search for negative barcodes; otherwise, <c>false</c>.</value>
+    </member>
+    <member name="P:Bytescout.BarCodeReader.IReader.RequireQuietZones">
+      <summary>
+            Gets or sets a value indicating whether to require "quiet zones" 
+            before and after barcode. "Quiet zone" is a whitespace with width
+            larger or equal to one symbol width.
+            </summary>
+      <value>
+        <c>true</c> if to require "quiet zones"; otherwise, <c>false</c>.</value>
+    </member>
+    <member name="P:Bytescout.BarCodeReader.IReader.OneSymbologyPerImage">
+      <summary>
+            Gets or sets a value indicating whether each image contains barcodes
+            of only one symbology.
+            </summary>
+      <value>
+        <c>true</c> if each image contains barcodes of only one
+            symbology; otherwise, <c>false</c>.
+            </value>
+    </member>
+    <member name="P:Bytescout.BarCodeReader.IReader.OneBarcodePerImage">
+      <summary>
+            Gets or sets a value indicating whether each image contains
+            only one barcode.
+            </summary>
+      <value>
+        <c>true</c> if each image contains only one barcode;
+            otherwise, <c>false</c>.</value>
+    </member>
+    <member name="P:Bytescout.BarCodeReader.IReader.Code39ExtendedModeSupport">
+      <summary>
+            Code 39 extended mode support (default True - enabled)
+            </summary>
+    </member>
+    <member name="P:Bytescout.BarCodeReader.IReader.MaxNumberOfBarcodesPerPage">
+      <summary>
+            Max number of barcodes to find. Default is -1 (unlimited number of barcodes)
+            If you know number of barcodes on the page then you can set this number to save time and make reading faster
+            </summary>
+    </member>
+    <member name="P:Bytescout.BarCodeReader.IReader.Decode1DExtended">
+      <summary>
+            Get or set extended 1D barcodes decoding (slower but better).
+            </summary>
+    </member>
+    <member name="P:Bytescout.BarCodeReader.IReader.TwoDThresholdFilterMethod">
+      <summary>
+            2D barcodes reading preprocessing image processing threshold filter
+            </summary>
+    </member>
+    <member name="P:Bytescout.BarCodeReader.IReader.OneDThresholdFilterMethod">
+      <summary>
+            1D barcodes reading preprocessing image processing threshold filter
+            </summary>
+    </member>
+    <member name="P:Bytescout.BarCodeReader.IReader.OptimizedProcessingOfLargeImages">
+      <summary>
+            Get or set optimized processing of large images. Faster but may fail on some fuzzy barcodes.
+            </summary>
+    </member>
+    <member name="P:Bytescout.BarCodeReader.IReader.OptimizedProcessingOfLargeImagesSizeLimit">
+      <summary>
+            Size limit for optimized processing of large images.
+            </summary>
+    </member>
+    <member name="P:Bytescout.BarCodeReader.IReader.MinimalDataLength">
+      <summary>
+            Gets or sets the minimal acceptable length of decoded data.
+            </summary>
+      <value>The minimal acceptable length of decoded data.</value>
+    </member>
+    <member name="P:Bytescout.BarCodeReader.IReader.MediumTrustLevelCompatible">
+      <summary>
+            Gets or sets a value indicating whether [medium trust level compatible].
+            </summary>
+      <value>
+        <c>true</c> if [medium trust level compatible]; otherwise, <c>false</c>.
+            </value>
+    </member>
+    <member name="P:Bytescout.BarCodeReader.IReader.FoundBarcodes">
+      <summary>
+            Gets the array of all barcodes found during last find.
+            </summary>
+      <value>The array of found barcodes.</value>
+    </member>
+    <member name="P:Bytescout.BarCodeReader.IReader.FoundCount">
+      <summary>
+            Retrieves number of all barcodes found during last find.
+            </summary>
+      <value>The number of found barcodes.</value>
+    </member>
+    <member name="P:Bytescout.BarCodeReader.IReader.PDFReadingMode">
+      <summary>
+            Gets or sets the PDF reading mode:
+            PDFReadingMode.RenderPDF (0, default) - render whole page to image, then search for barcodes;
+            PDFReadingMode.ExtractEmbeddedImagesOnly - (1) - extract images, then search for barcodes.
+            </summary>
+      <value>The PDF reading mode.</value>
+    </member>
+    <member name="P:Bytescout.BarCodeReader.IReader.PDFRenderingResolution">
+      <summary>
+            Gets or sets the PDF rendering resolution. Default is 200 DPI.
+            </summary>
+      <value>The PDF rendering resolution.</value>
+    </member>
+    <member name="T:Bytescout.BarCodeReader.FoundBarcode">
+      <summary>
+            Holds information about barcode found in image by <see cref="T:Bytescout.BarCodeReader.Reader" />
+            class.
+            </summary>
+    </member>
+    <member name="M:Bytescout.BarCodeReader.FoundBarcode.ToString">
+      <summary>
+            Returns a <see cref="T:System.String" /> that represents this instance.
+            </summary>
+      <returns>
+            A <see cref="T:System.String" /> that represents this instance.
+            </returns>
+    </member>
+    <member name="P:Bytescout.BarCodeReader.FoundBarcode.Value">
+      <summary>
+            Gets the found barcode value.
+            </summary>
+      <value>The found barcode value.</value>
+    </member>
+    <member name="P:Bytescout.BarCodeReader.FoundBarcode.RawData">
+      <summary>
+            Gets the found barcode raw data (indexes of encoded data into
+            symbology alphabet(s)).
+            </summary>
+      <value>The found barcode raw data.</value>
+    </member>
+    <member name="P:Bytescout.BarCodeReader.FoundBarcode.Type">
+      <summary>
+            Gets the found barcode symbology type.
+            </summary>
+      <value>The found barcode symbology type.</value>
+    </member>
+    <member name="P:Bytescout.BarCodeReader.FoundBarcode.Rect">
+      <summary>
+            Gets the found barcode rectangle.
+            </summary>
+      <value>The found barcode rectangle.</value>
+    </member>
+    <member name="P:Bytescout.BarCodeReader.FoundBarcode.Page">
+      <summary>
+            Gets the page number in the image file that contains found barcode.
+            </summary>
+      <value>The page number in the image file that contains found barcode.</value>
+    </member>
+    <member name="P:Bytescout.BarCodeReader.FoundBarcode.File">
+      <summary>
+            Gets the name of the image file containing found barcode.
+            </summary>
+      <value>The name of the image file containing found barcode.</value>
+    </member>
+    <member name="T:Bytescout.BarCodeReader.OneDThresholdFilterMethod">
+      <summary>
+            1D barcodes reading preprocessing image processing threshold filter
+            </summary>
+    </member>
+    <member name="F:Bytescout.BarCodeReader.OneDThresholdFilterMethod.WholeImage">
+      <summary>
+            (0) WholeImage method
+            </summary>
+    </member>
+    <member name="F:Bytescout.BarCodeReader.OneDThresholdFilterMethod.Block">
+      <summary>
+            (1) Block method
+            </summary>
+    </member>
+    <member name="T:Bytescout.BarCodeReader.OrientationType">
+      <summary>
+            Describes all supported barcode orientations.
+            </summary>
+    </member>
+    <member name="F:Bytescout.BarCodeReader.OrientationType.SearchNone">
+      <summary>
+            (0) No orientations will be searched.
+            </summary>
+    </member>
+    <member name="F:Bytescout.BarCodeReader.OrientationType.SearchHorizontal">
+      <summary>
+            (1) Horizontal orientation will be searched.
+            </summary>
+    </member>
+    <member name="F:Bytescout.BarCodeReader.OrientationType.SearchVertical">
+      <summary>
+            (2) Vertical orientation will be searched.
+            </summary>
+    </member>
+    <member name="F:Bytescout.BarCodeReader.OrientationType.SearchLeftTopToBottomDiagonal">
+      <summary>
+            (4) Left top to right bottom diagonal orientation will be searched.
+            This orientation is never gets searched in PocketPC and WinCE
+            versions of the library.
+            </summary>
+    </member>
+    <member name="F:Bytescout.BarCodeReader.OrientationType.SearchLeftBottomToTopDiagonal">
+      <summary>
+            (8) Left bottom to right top diagonal orientation will be searched.
+            This orientation is never gets searched in PocketPC and WinCE
+            versions of the library.
+            </summary>
+    </member>
+    <member name="F:Bytescout.BarCodeReader.OrientationType.SearchAll">
+      <summary>
+            (15) All orientations will be searched.
+            </summary>
+    </member>
+    <member name="T:Bytescout.BarCodeReader.PDFReadingMode">
+      <summary>
+            PDF files processing modes.
+            </summary>
+    </member>
+    <member name="F:Bytescout.BarCodeReader.PDFReadingMode.RenderPDF">
+      <summary>
+            (0) Render whole page to image, then search for barcodes.
+            </summary>
+    </member>
+    <member name="F:Bytescout.BarCodeReader.PDFReadingMode.ExtractEmbeddedImagesOnly">
+      <summary>
+            (1) Extract images, then search for barcodes.
+            </summary>
+    </member>
+    <member name="T:Bytescout.BarCodeReader.Reader">
+      <summary>
+            Reads barcodes from images.
+            </summary>
+    </member>
+    <member name="F:Bytescout.BarCodeReader.Reader.ObjectFinderResultRectangles">
+      <summary>
+      </summary>
+    </member>
+    <member name="M:Bytescout.BarCodeReader.Reader.#ctor">
+      <summary>
+            Initializes a new instance of the <see cref="T:Bytescout.BarCodeReader.Reader" /> class.
+            </summary>
+    </member>
+    <member name="M:Bytescout.BarCodeReader.Reader.GetImagePageCount(System.Drawing.Image)">
+      <summary>
+            Gets the number of pages in specified image.
+            </summary>
+      <param name="img">The image whose number of pages to retrieve.</param>
+      <returns>
+      </returns>
+    </member>
+    <member name="M:Bytescout.BarCodeReader.Reader.ReadFrom(System.Drawing.Bitmap)">
+      <summary>
+            Reads barcodes from all pages of the image in the Bitmap object.
+            </summary>
+      <param name="bmp">The Bitmap object containing an image.</param>
+      <returns>Array of FoundBarcode objects whose elements describe found barcodes.</returns>
+    </member>
+    <member name="M:Bytescout.BarCodeReader.Reader.ReadFromHBitmap(System.Int64)">
+      <summary>
+            Reads barcodes from the image pointed to by HBITMAP handle.
+            </summary>
+      <param name="hbmp">The HBITMAP handle for an image.</param>
+    </member>
+    <member name="M:Bytescout.BarCodeReader.Reader.GetFoundBarcodeType(System.Int32)">
+      <summary>
+            Gets the type of the found barcode.
+            </summary>
+      <param name="barcodeIndex">Index of the barcode.</param>
+      <returns>The type of the found barcode.</returns>
+    </member>
+    <member name="M:Bytescout.BarCodeReader.Reader.GetFoundBarcodeValue(System.Int32)">
+      <summary>
+            Gets the found barcode value.
+            </summary>
+      <param name="barcodeIndex">Index of the barcode.</param>
+      <returns>The found barcode value.</returns>
+    </member>
+    <member name="M:Bytescout.BarCodeReader.Reader.GetFoundBarcodePage(System.Int32)">
+      <summary>
+            Gets the number of page where barcode was found.
+            </summary>
+      <param name="barcodeIndex">Index of the barcode.</param>
+      <returns>The number of page where barcode was found.</returns>
+    </member>
+    <member name="M:Bytescout.BarCodeReader.Reader.GetFoundBarcodeLeft(System.Int32)">
+      <summary>
+            Gets the X coordinate of found barcode.
+            </summary>
+      <param name="barcodeIndex">Index of the barcode.</param>
+      <returns>The X coordinate of found barcode.</returns>
+    </member>
+    <member name="M:Bytescout.BarCodeReader.Reader.GetFoundBarcodeTop(System.Int32)">
+      <summary>
+            Gets the Y coordinate of found barcode.
+            </summary>
+      <param name="barcodeIndex">Index of the barcode.</param>
+      <returns>The Y coordinate of found barcode.</returns>
+    </member>
+    <member name="M:Bytescout.BarCodeReader.Reader.GetFoundBarcodeWidth(System.Int32)">
+      <summary>
+            Gets the width of found barcode.
+            </summary>
+      <param name="barcodeIndex">Index of the barcode.</param>
+      <returns>The width of found barcode.</returns>
+    </member>
+    <member name="M:Bytescout.BarCodeReader.Reader.GetFoundBarcodeHeight(System.Int32)">
+      <summary>
+            Gets the height of found barcode.
+            </summary>
+      <param name="barcodeIndex">Index of the barcode.</param>
+      <returns>The height of found barcode.</returns>
+    </member>
+    <member name="M:Bytescout.BarCodeReader.Reader.ReadFrom(System.Drawing.Bitmap,System.Int32)">
+      <summary>
+            Reads barcodes from the specified page of the image in the Bitmap object.
+            </summary>
+      <param name="bmp">The Bitmap object to read barcodes from.</param>
+      <param name="page">The page to find barcodes at.</param>
+      <returns>
+            Array of FoundBarcode objects whose elements describe found barcodes.
+            </returns>
+    </member>
+    <member name="M:Bytescout.BarCodeReader.Reader.ReadFrom(System.String)">
+      <summary>
+            Reads barcodes from all pages of the image in the specified file.
+            </summary>
+      <param name="fileName">Name of the image file to read barcodes from.</param>
+      <returns>
+            Array of FoundBarcode objects whose elements describe found barcodes.
+            </returns>
+    </member>
+    <member name="M:Bytescout.BarCodeReader.Reader.ReadFromFile(System.String)">
+      <summary>
+            Reads barcodes from all pages of the image in the specified file.
+            </summary>
+      <param name="fileName">Name of the image file to read barcodes from.</param>
+    </member>
+    <member name="M:Bytescout.BarCodeReader.Reader.ReadFrom(System.String,System.Int32)">
+      <summary>
+            Reads barcodes from specified page of the image in the specified file.
+            </summary>
+      <param name="fileName">Name of the image file to read barcodes from.</param>
+      <param name="page">The page to read barcodes from.</param>
+      <returns>
+            Array of FoundBarcode objects whose elements describe found barcodes.
+            </returns>
+    </member>
+    <member name="M:Bytescout.BarCodeReader.Reader.ReadFromFilePage(System.String,System.Int32)">
+      <summary>
+            Reads barcodes from specified page of the image in the specified file.
+            </summary>
+      <param name="fileName">Name of the image file to read barcodes from.</param>
+      <param name="page">The page to read barcodes from.</param>
+    </member>
+    <member name="M:Bytescout.BarCodeReader.Reader.FireBarcodeFound(Bytescout.BarCodeReader.BarcodeFoundEventArgs)">
+      <summary>
+            Raises the <see cref="E:BarcodeFound" /> event.
+            </summary>
+      <param name="e">The <see cref="T:Bytescout.BarCodeReader.BarcodeFoundEventArgs" /> instance containing the found barcode information.</param>
+    </member>
+    <member name="M:Bytescout.BarCodeReader.Reader.getPageCount(System.Drawing.Image)">
+      <summary>
+            Gets the number of pages in specified bitmap.
+            </summary>
+      <param name="bmp">The bitmap to test.</param>
+      <returns>The number of pages in specified bitmap.</returns>
+    </member>
+    <member name="M:Bytescout.BarCodeReader.Reader.getPage(System.Drawing.Bitmap,System.Int32)">
+      <summary>
+            Gets clone of the page with specified number from bitmap.
+            </summary>
+      <param name="bmp">The bitmap to get a page from.</param>
+      <param name="page">The page number.</param>
+      <returns>The clone of the page with specified number from bitmap.</returns>
+      <remarks>User should Dispose returned bitmap.</remarks>
+    </member>
+    <member name="M:Bytescout.BarCodeReader.Reader.getScanAreas(System.Drawing.Bitmap)">
+      <summary>
+            Gets the array of rectangles describing scan area (derived from scan
+            area and scan area name).
+            </summary>
+      <param name="bmp">The bitmap to use for calculation of scan 
+            areas.</param>
+      <returns>The array of rectangles describing scan area.</returns>
+    </member>
+    <member name="M:Bytescout.BarCodeReader.Reader.readFromPages(System.Drawing.Bitmap,System.Int32,System.Int32)">
+      <summary>
+            Reads barcodes from [potentially] multipage bitmap.
+            </summary>
+      <param name="bmp">The [potentially] multipage bitmap.</param>
+      <param name="startPage">The start page index.</param>
+      <param name="readCount">The number of pages to read barcodes from.</param>
+    </member>
+    <member name="M:Bytescout.BarCodeReader.Reader.OnDecoderFoundBarcode(System.Object,Bytescout.BarCodeReader.BarcodeFoundEventArgs)">
+      <summary>
+            Called when decoder founds a barcode.
+            </summary>
+      <param name="sender">The sender.</param>
+      <param name="e">The <see cref="T:Bytescout.BarCodeReader.BarcodeFoundEventArgs" /> instance containing the event data.</param>
+    </member>
+    <member name="M:Bytescout.BarCodeReader.Reader.ReadFromPdfFile(System.String)">
+      <summary>
+             Reads barcodes from all pages of specified PDF document.
+            </summary>
+      <param name="fileName">PDF file name.</param>
+    </member>
+    <member name="M:Bytescout.BarCodeReader.Reader.ReadFromPdfFilePage(System.String,System.Int32,System.Int32)">
+      <summary>
+             Reads barcodes from specified pages of PDF document.
+            </summary>
+      <param name="fileName">PDF file name.</param>
+      <param name="startPage">Zero-based start page index.</param>
+      <param name="pageCount">Count of pages to process from the start page. Specify -1 for all pages.</param>
+    </member>
+    <member name="M:Bytescout.BarCodeReader.Reader.ReadFromPdfFile(System.IO.Stream)">
+      <summary>
+             Reads barcodes from all pages of provided PDF document.
+            </summary>
+      <param name="fileStream">PDF file stream.</param>
+    </member>
+    <member name="M:Bytescout.BarCodeReader.Reader.ReadFromPdfFilePage(System.IO.Stream,System.Int32,System.Int32)">
+      <summary>
+             Reads barcodes from specified pages of provided PDF document.
+            </summary>
+      <param name="fileStream">PDF file stream.</param>
+      <param name="startPage">Zero-based start page index.</param>
+      <param name="pageCount">Count of pages to process from the start page. Specify -1 for all pages.</param>
+    </member>
+    <member name="E:Bytescout.BarCodeReader.Reader.BarcodeFound">
+      <summary>
+            Occurs when barcode found during read session.
+            </summary>
+    </member>
+    <member name="P:Bytescout.BarCodeReader.Reader.RegistrationName">
+      <summary>
+            Gets or sets the name part of the registration information.
+            </summary>
+      <value>The name part of the registration information.</value>
+    </member>
+    <member name="P:Bytescout.BarCodeReader.Reader.RegistrationKey">
+      <summary>
+            Gets or sets the key number part of registration information.
+            </summary>
+      <value>The key number part of registration information.</value>
+    </member>
+    <member name="P:Bytescout.BarCodeReader.Reader.CustomArea">
+      <summary>
+            Gets or sets custom scan area to find barcodes within.
+            </summary>
+      <value>Custom scan area to find barcodes within.</value>
+    </member>
+    <member name="P:Bytescout.BarCodeReader.Reader.CustomAreaLeft">
+      <summary>
+            Gets or sets leftmost position of custom scan area to find barcodes within.
+            </summary>
+      <value>Leftmost position of custom scan area to find barcodes within.</value>
+    </member>
+    <member name="P:Bytescout.BarCodeReader.Reader.CustomAreaTop">
+      <summary>
+            Gets or sets topmost position of custom scan area to find barcodes within.
+            </summary>
+      <value>Topmost position of custom scan area to find barcodes within.</value>
+    </member>
+    <member name="P:Bytescout.BarCodeReader.Reader.CustomAreaWidth">
+      <summary>
+            Gets or sets width of custom scan area to find barcodes within.
+            </summary>
+      <value>Width of custom scan area to find barcodes within.</value>
+    </member>
+    <member name="P:Bytescout.BarCodeReader.Reader.CustomAreaHeight">
+      <summary>
+            Gets or sets height of custom scan area to find barcodes within.
+            </summary>
+      <value>Height of custom scan area to find barcodes within.</value>
+    </member>
+    <member name="P:Bytescout.BarCodeReader.Reader.MinObjectSizeInPixels">
+      <summary>
+            Gets or sets the minimal size of a 2d barcode in pixels.
+            </summary>
+      <value>The minimal size of a 2d barcode in pixels.</value>
+    </member>
+    <member name="P:Bytescout.BarCodeReader.Reader.ScanArea">
+      <summary>
+            Gets or sets the friendly name of the scan area.
+            </summary>
+      <value>The friendly name of the scan area.</value>
+    </member>
+    <member name="P:Bytescout.BarCodeReader.Reader.TypeToFind">
+      <summary>
+            Gets or sets the symbology type to find. Barcodes with other symbology types won't be found.
+            </summary>
+      <value>The symbology type to find.</value>
+    </member>
+    <member name="P:Bytescout.BarCodeReader.Reader.Orientation">
+      <summary>
+            Gets or sets the barcode orientation(s) to search.
+            </summary>
+      <value>The barcode orientation(s) to search.</value>
+      <remarks>Diagonal orientations (
+            <see cref="F:Bytescout.BarCodeReader.OrientationType.SearchLeftTopToBottomDiagonal" /> and
+            <see cref="F:Bytescout.BarCodeReader.OrientationType.SearchLeftBottomToTopDiagonal" />) are
+            never get searched in PocketPC and WinCE versions of
+            the library.</remarks>
+    </member>
+    <member name="P:Bytescout.BarCodeReader.Reader.SearchMirrored">
+      <summary>
+            Gets or sets a value indicating whether to search for mirrored barcodes.
+            </summary>
+      <value>
+        <c>true</c> if search for mirrored barcodes; otherwise, <c>false</c>.
+            </value>
+    </member>
+    <member name="P:Bytescout.BarCodeReader.Reader.SearchNegative">
+      <summary>
+            Gets or sets a value indicating whether to search for negative barcodes.
+            </summary>
+      <value>
+        <c>true</c> if search for negative barcodes; otherwise, <c>false</c>.
+            </value>
+    </member>
+    <member name="P:Bytescout.BarCodeReader.Reader.RequireQuietZones">
+      <summary>
+            Gets or sets a value indicating whether to require "quiet zones"
+            before and after barcode. "Quiet zone" is a whitespace with width
+            larger or equal to one symbol width.
+            </summary>
+      <value>
+        <c>true</c> if to require "quiet zones"; otherwise, <c>false</c>.
+            </value>
+    </member>
+    <member name="P:Bytescout.BarCodeReader.Reader.OneSymbologyPerImage">
+      <summary>
+            Gets or sets a value indicating whether each image contains barcodes
+            of only one symbology.
+            </summary>
+      <value>
+        <c>true</c> if each image contains barcodes of only one
+            symbology; otherwise, <c>false</c>.
+            </value>
+    </member>
+    <member name="P:Bytescout.BarCodeReader.Reader.OneBarcodePerImage">
+      <summary>
+            Gets or sets a value indicating whether each image contains
+            only one barcode.
+            False by default. CF.NET versions (Pocket PC and Windows CE) have True by default.
+            </summary>
+      <value>
+        <c>true</c> if each image contains only one barcode;
+            otherwise, <c>false</c>.
+            </value>
+      <remarks>
+            Note: If this property is true then the library returns the barcode rectangle as a whole image rectangle.
+            </remarks>
+    </member>
+    <member name="P:Bytescout.BarCodeReader.Reader.Code39ExtendedModeSupport">
+      <summary>
+            Code 39 Extended mode support (enabled by default - True)
+            </summary>
+    </member>
+    <member name="P:Bytescout.BarCodeReader.Reader.MaxNumberOfBarcodesPerPage">
+      <summary>
+            Max number of barcodes to find. Default is -1 (unlimited number of barcodes)
+            If you know number of barcodes on the page then you can set this number to save time and make reading faster
+            </summary>
+    </member>
+    <member name="P:Bytescout.BarCodeReader.Reader.AllowOrphanedSupplementals">
+      <summary>
+            Gets or sets a value indicating whether to allow orphaned
+            supplemental barcodes to be decoded.
+            </summary>
+      <value>
+        <c>true</c> if to allow orphaned supplemental barcodes to be
+            found; otherwise, <c>false</c>.
+            </value>
+    </member>
+    <member name="P:Bytescout.BarCodeReader.Reader.MinimalDataLength">
+      <summary>
+            Gets or sets the minimal acceptable length of decoded data.
+            </summary>
+      <value>The minimal acceptable length of decoded data.</value>
+    </member>
+    <member name="P:Bytescout.BarCodeReader.Reader.MediumTrustLevelCompatible">
+      <summary>
+            Gets or sets a value indicating whether [medium trust level compatible].
+            Default is False (not compatible with ASP.NET Medium Trust level).
+            </summary>
+      <value>
+        <c>true</c> if [medium trust level compatible]; otherwise, <c>false</c>.
+            </value>
+    </member>
+    <member name="P:Bytescout.BarCodeReader.Reader.LastDecodingTime">
+      <summary>
+            Gets the time that last decoding process took.
+            </summary>
+      <value>The time that last decoding process took.</value>
+    </member>
+    <member name="P:Bytescout.BarCodeReader.Reader.Decode1DExtended">
+      <summary>
+             Get or set extended 1D barcodes decoding (slower but better).
+            </summary>
+    </member>
+    <member name="P:Bytescout.BarCodeReader.Reader.TwoDThresholdFilterMethod">
+      <summary>
+            2D barcodes reading preprocessing image processing threshold filter
+            </summary>
+    </member>
+    <member name="P:Bytescout.BarCodeReader.Reader.OneDThresholdFilterMethod">
+      <summary>
+            1D barcodes reading preprocessing image processing threshold filter
+            </summary>
+    </member>
+    <member name="P:Bytescout.BarCodeReader.Reader.OptimizedProcessingOfLargeImages">
+      <summary>
+             Get or set optimized processing of large images. Faster but may fail on some fuzzy barcodes.
+            </summary>
+    </member>
+    <member name="P:Bytescout.BarCodeReader.Reader.OptimizedProcessingOfLargeImagesSizeLimit">
+      <summary>
+             Size limit for optimized processing of large images.
+            </summary>
+    </member>
+    <member name="P:Bytescout.BarCodeReader.Reader.FoundBarcodes">
+      <summary>
+            Gets the array of all barcodes found during last find.
+            </summary>
+      <value>The array of found barcodes.</value>
+    </member>
+    <member name="P:Bytescout.BarCodeReader.Reader.FoundCount">
+      <summary>
+            Retrieves number of all barcodes found during last find.
+            </summary>
+      <value>The number of found barcodes.</value>
+    </member>
+    <member name="P:Bytescout.BarCodeReader.Reader.PDFReadingMode">
+      <summary>
+            Gets or sets the PDF reading mode:
+            PDFReadingMode.RenderPDF (0, default) - render whole page to image, then search for barcodes;
+            PDFReadingMode.ExtractEmbeddedImagesOnly - (1) - extract images, then search for barcodes.
+            </summary>
+      <value>The PDF reading mode.</value>
+    </member>
+    <member name="P:Bytescout.BarCodeReader.Reader.PDFRenderingResolution">
+      <summary>
+            Gets or sets the PDF rendering resolution. Default is 200 DPI.
+            </summary>
+      <value>The PDF rendering resolution.</value>
+    </member>
+    <member name="T:Bytescout.BarCodeReader.Reader.BarcodeFoundEventHandler">
+      <summary>
+            Handles the BarcodeFound events
+            </summary>
+      <param name="sender">The source of the event.</param>
+      <param name="e">The <see cref="T:Bytescout.BarCodeReader.BarcodeFoundEventArgs" /> instance containing the found barcode information.</param>
+    </member>
+    <member name="T:Bytescout.BarCodeReader.ScanAreaType">
+      <summary>
+            Describes all supported scan areas.
+            </summary>
+    </member>
+    <member name="F:Bytescout.BarCodeReader.ScanAreaType.Custom">
+      <summary>
+            (0) Custom scan area set. Use <see cref="P:Bytescout.BarCodeReader.Reader.ScanArea" /> property to read or update scan area.
+            </summary>
+    </member>
+    <member name="F:Bytescout.BarCodeReader.ScanAreaType.TopLeftQuarter">
+      <summary>
+            (1) Top left quarter of the page gets scanned for barcodes.
+            </summary>
+    </member>
+    <member name="F:Bytescout.BarCodeReader.ScanAreaType.TopRightQuarter">
+      <summary>
+            (2) Top right quarter of the page gets scanned for barcodes.
+            </summary>
+    </member>
+    <member name="F:Bytescout.BarCodeReader.ScanAreaType.BottomRightQuarter">
+      <summary>
+            (4) Bottom right quarter of the page gets scanned for barcodes.
+            </summary>
+    </member>
+    <member name="F:Bytescout.BarCodeReader.ScanAreaType.BottomLeftQuarter">
+      <summary>
+            (8) Bottom left quarter of the page gets scanned for barcodes.
+            </summary>
+    </member>
+    <member name="F:Bytescout.BarCodeReader.ScanAreaType.TopHalf">
+      <summary>
+            (3) Top half of the page gets scanned for barcodes.
+            </summary>
+    </member>
+    <member name="F:Bytescout.BarCodeReader.ScanAreaType.BottomHalf">
+      <summary>
+            (12) Bottom half of the page gets scanned for barcodes.
+            </summary>
+    </member>
+    <member name="F:Bytescout.BarCodeReader.ScanAreaType.WholePage">
+      <summary>
+            (15) Whole page gets scanned for barcodes.
+            </summary>
+    </member>
+    <member name="T:Bytescout.BarCodeReader.SymbologyFilter">
+      <summary>
+            Describes all possible symbology filter values.
+            </summary>
+    </member>
+    <member name="F:Bytescout.BarCodeReader.SymbologyFilter.FindNone">
+      <summary>
+            (0) Reader will skip all found barcodes
+            </summary>
+    </member>
+    <member name="F:Bytescout.BarCodeReader.SymbologyFilter.FindEAN8">
+      <summary>
+            (1) Reader will search for EAN-8 barcodes.
+            </summary>
+    </member>
+    <member name="F:Bytescout.BarCodeReader.SymbologyFilter.FindEAN13">
+      <summary>
+            (2) Reader will search for EAN-13 barcodes.
+            </summary>
+    </member>
+    <member name="F:Bytescout.BarCodeReader.SymbologyFilter.FindUPCE">
+      <summary>
+            (4) Reader will search for UPC-E barcodes.
+            </summary>
+    </member>
+    <member name="F:Bytescout.BarCodeReader.SymbologyFilter.FindUPCA">
+      <summary>
+            (8) Reader will search for UPC-A barcodes.
+            </summary>
+    </member>
+    <member name="F:Bytescout.BarCodeReader.SymbologyFilter.FindInterleaved2of5">
+      <summary>
+            (16) Reader will search for Interleaved 2 of 5 barcodes.
+            </summary>
+    </member>
+    <member name="F:Bytescout.BarCodeReader.SymbologyFilter.FindCode39">
+      <summary>
+            (32) Reader will search for Code 39 barcodes.
+            </summary>
+    </member>
+    <member name="F:Bytescout.BarCodeReader.SymbologyFilter.FindCode128">
+      <summary>
+            (64) Reader will search for Code 128 barcodes.
+            </summary>
+    </member>
+    <member name="F:Bytescout.BarCodeReader.SymbologyFilter.FindEAN2">
+      <summary>
+            (128) Reader will search for EAN-2 barcodes.
+            </summary>
+    </member>
+    <member name="F:Bytescout.BarCodeReader.SymbologyFilter.FindEAN5">
+      <summary>
+            (256) Reader will search for EAN-5 barcodes.
+            </summary>
+    </member>
+    <member name="F:Bytescout.BarCodeReader.SymbologyFilter.FindGS1">
+      <summary>
+            (512) Reader will search for GS1 barcodes.
+            </summary>
+    </member>
+    <member name="F:Bytescout.BarCodeReader.SymbologyFilter.FindCodabar">
+      <summary>
+            (1024) Reader will search for Codabar barcodes.
+            </summary>
+    </member>
+    <member name="F:Bytescout.BarCodeReader.SymbologyFilter.FindPDF417">
+      <summary>
+            (2048) Reader will search for PDF417 barcodes.
+            </summary>
+    </member>
+    <member name="F:Bytescout.BarCodeReader.SymbologyFilter.FindDataMatrix">
+      <summary>
+            (4096) Reader will search for DataMatrix barcodes.
+            </summary>
+    </member>
+    <member name="F:Bytescout.BarCodeReader.SymbologyFilter.FindQRCode">
+      <summary>
+            (8192) Reader will search for DataMatrix barcodes.
+            </summary>
+    </member>
+    <member name="F:Bytescout.BarCodeReader.SymbologyFilter.FindAztec">
+      <summary>
+            (16384) Reader will search for DataMatrix barcodes.
+            </summary>
+    </member>
+    <member name="F:Bytescout.BarCodeReader.SymbologyFilter.FindAll1D">
+      <summary>
+            (2047) Reader will search for all supported 1D barcodes
+            </summary>
+    </member>
+    <member name="F:Bytescout.BarCodeReader.SymbologyFilter.FindAll2D">
+      <summary>
+            (30720) Reader will search for all supported 2D barcodes
+            </summary>
+    </member>
+    <member name="F:Bytescout.BarCodeReader.SymbologyFilter.FindAll">
+      <summary>
+            (32767) Sets the reader to find all possible supported barcode types
+            </summary>
+    </member>
+    <member name="T:Bytescout.BarCodeReader.SymbologyType">
+      <summary>
+            Describes all supported barcode symbologies (types).
+            </summary>
+    </member>
+    <member name="F:Bytescout.BarCodeReader.SymbologyType.Unknown">
+      <summary>
+            (0) Indicates that barcode symbology is unknown.
+            </summary>
+    </member>
+    <member name="F:Bytescout.BarCodeReader.SymbologyType.Codabar">
+      <summary>
+            (1) Codabar barcode (Also known as Ames Code, USD-4, NW-7, 
+            Code 2 of 7). Codabar symbology allows only symbols from this 
+            string '0123456789-$:/.+' to be encoded. This symbology used 
+            for example in libraries and blood banks.
+            </summary>
+    </member>
+    <member name="F:Bytescout.BarCodeReader.SymbologyType.Code128">
+      <summary>
+            (2) Code 128 barcode. It is a very effective, high-density
+            symbology which permits the encoding of alphanumeric (subject to
+            alphabet selection) data. Code 128 is a very dense code, used
+            extensively worldwide.
+            </summary>
+    </member>
+    <member name="F:Bytescout.BarCodeReader.SymbologyType.GS1">
+      <summary>
+            (3) GS1-128 symbology (new name for EAN128 symbology).
+            </summary>
+    </member>
+    <member name="F:Bytescout.BarCodeReader.SymbologyType.Code39">
+      <summary>
+            (4) Code 39 barcode (aka USD-3, 3 of 9). Code 39 symbology allows 
+            all ASCII symbols to be encoded in extended mode or symbols from
+            this string "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ-. $/+%" in 
+            standard mode. This symbology used for example by U.S. Government 
+            and military, required for DoD applications.
+            </summary>
+    </member>
+    <member name="F:Bytescout.BarCodeReader.SymbologyType.I2of5">
+      <summary>
+            (5) Interleaved 2 of 5 barcode (Also know as Code 2 of 5 Interleaved). 
+            Interleaved 2 of 5 symbology allows only numeric values to be 
+            encoded. This symbology is used primarily in the distribution 
+            and warehouse industry.
+            </summary>
+    </member>
+    <member name="F:Bytescout.BarCodeReader.SymbologyType.EAN13">
+      <summary>
+            (6) EAN-13 barcode. Used with consumer products internationally.
+            EAN-13 symbology allows only numeric values to be encoded.
+            </summary>
+    </member>
+    <member name="F:Bytescout.BarCodeReader.SymbologyType.EAN8">
+      <summary>
+            (7) EAN-8 barcode. This symbology is a short version of EAN-13 that
+            is intended to be used on packaging which would be otherwise 
+            too small to use one of the other versions. Used with consumer 
+            products internationally. EAN-8 symbology allows only numeric 
+            values to be encoded.
+            </summary>
+    </member>
+    <member name="F:Bytescout.BarCodeReader.SymbologyType.UPCA">
+      <summary>
+            (8) UPC-A barcode. Used with consumer products in U.S. UPC-A
+            symbology allows only numeric values to be encoded.
+            </summary>
+    </member>
+    <member name="F:Bytescout.BarCodeReader.SymbologyType.UPCE">
+      <summary>
+            (9) UPC-E barcode. This symbology is zero-suppression version 
+            of UPC-A. It is intended to be used on packaging which would 
+            be otherwise too small to use one of the other versions. The 
+            code is smaller because it drops out zeros which would otherwise 
+            occur in a symbol. Used with consumer products in U.S. 
+            UPC-E symbology allows only numeric values to be encoded.
+            </summary>
+    </member>
+    <member name="F:Bytescout.BarCodeReader.SymbologyType.EAN2">
+      <summary>
+            (10) The EAN-2 (Also known as EAN/2 and EAN 2) is a supplement to 
+            the EAN-13 and UPC-A barcodes. It is often used on magazines 
+            and periodicals to indicate an issue number.
+            </summary>
+    </member>
+    <member name="F:Bytescout.BarCodeReader.SymbologyType.EAN5">
+      <summary>
+            (11) The EAN-5 (Also known as EAN/5 and EAN 5) is a supplement to
+            EAN-13 and UPC-A barcodes. It is often used to give a 
+            suggestion for the price of the book.
+            </summary>
+    </member>
+    <member name="F:Bytescout.BarCodeReader.SymbologyType.PDF417">
+      <summary>
+            (12) PDF417 symbology. This symbology is heavily used in the parcel 
+            industry. The PDF417 symbology can encode a vast amount of data 
+            into a small space. This symbology allows a maximum data size of 
+            1850 text characters, or 2710 digits. 
+            </summary>
+    </member>
+    <member name="F:Bytescout.BarCodeReader.SymbologyType.DataMatrix">
+      <summary>
+            (13) Data Matrix symbology. The most popular application for Data 
+            Matrix is marking small items. The Data Matrix can encode text
+            and raw data. Usual data size is from a few bytes up to 2 kilobytes.
+            </summary>
+    </member>
+    <member name="F:Bytescout.BarCodeReader.SymbologyType.QRCode">
+      <summary>
+            (14) QR Code symbology. QR Code initially was used for tracking
+            parts in vehicle manufacturing, but now QR Codes used in a much
+            broader context, including both commercial tracking applications
+            and convenience-oriented applications aimed at mobile phone
+            users (known as mobile tagging).
+            </summary>
+    </member>
+    <member name="F:Bytescout.BarCodeReader.SymbologyType.Aztec">
+      <summary>
+            (15) Aztec symbology.
+            </summary>
+    </member>
+    <member name="T:Bytescout.BarCodeReader.TwoDThresholdFilterMethod">
+      <summary>
+             2D barcodes reading preprocessing image processing threshold filter
+            </summary>
+    </member>
+    <member name="F:Bytescout.BarCodeReader.TwoDThresholdFilterMethod.Adaptive">
+      <summary>
+             (0) Adaptive
+            </summary>
+    </member>
+    <member name="F:Bytescout.BarCodeReader.TwoDThresholdFilterMethod.OTSU">
+      <summary>
+             (1) OTSU
+            </summary>
+    </member>
+  </members>
+</doc>
